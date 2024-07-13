@@ -2,6 +2,7 @@ const express = require('express');
 const quantifuel = express();
 require('dotenv').config();
 
+const print = require('./modules/utils/consoleUtils');
 const { mongodb, connectMongoose } = require('./modules/config/mongoose');
 
 const PROTOCOL = process.env.PROTOCOL || 'http';
@@ -13,6 +14,7 @@ const allowedOrigins = process.env.ALLOWED_ORIGINS || 'http://localhost:5345';
 const logFileName = process.env.LOG_FILE_NAME;
 
 quantifuel.get('/api', (req, res) => {
+  print.log('someone accessed the server');
   res.send('Welcome to QuantiFuel!');
 });
 
@@ -74,11 +76,10 @@ const clearLogFile = () => {
 };
 
 const shutdownServer = async () => {
-  await validationStrings.clear();
   await setTimeout(async () => {
     await server.close(() => {
       consoleout.log(
-        `\x1b[31mServer listened at \x1b[34m${PROTOCOL}://${HOST}:${PORT}/\x1b[31m has been stopped on command.\x1b[0m`
+        `\x1b[31mServer listening at \x1b[34m${PROTOCOL}://${HOST}:${PORT}/\x1b[31m has been stopped on command.\x1b[0m`
       );
     });
   }, 1000);
@@ -88,7 +89,6 @@ const shutdownServer = async () => {
 };
 
 const restartServer = async () => {
-  await validationStrings.clear();
   await setTimeout(async () => {
     await server.close(() => {
       consoleout.log(
@@ -109,7 +109,7 @@ const restartServer = async () => {
 const processConsoleCommand = (command) => {
   if (command === 'clearlog') {
     clearLogFile();
-  } else if (command === 'exit') {
+  } else if (command === 'stop') {
     consoleout.log('\x1b[31mStopping server...\x1b[0m');
     shutdownServer();
   } else if (command === 'restart') {

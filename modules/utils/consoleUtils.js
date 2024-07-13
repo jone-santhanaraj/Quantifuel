@@ -1,4 +1,3 @@
-
 const fs = require('fs');
 const path = require('path');
 const CircularJSON = require('circular-json');
@@ -11,7 +10,7 @@ const logFileName = process.env.LOG_FILE_NAME;
 const logPrefix = '\x1b[36m[log]\x1b[0m';
 const errorPrefix = '\x1b[31m[error]\x1b[0m';
 const warnPrefix = '\x1b[33m[warning]\x1b[0m';
-const infoPrefix = '\x1b[35m[Quantifuel]\x1b[0m';
+const infoPrefix = '\x1b[31m[Quantifuel]\x1b[0m';
 const successPrefix = '\x1b[32m[success]\x1b[0m';
 const failedPrefix = '\x1b[31m[failure]\x1b[0m';
 
@@ -114,7 +113,7 @@ const consoleout = customConsoleFunction();
 global.consoleout = consoleout;
 
 const logStream = logFileName
-  ? fs.createWriteStream(path.join(__dirname, `../${logFileName}`), {
+  ? fs.createWriteStream(path.join(__dirname, `../../${logFileName}`), {
       flags: 'a',
     })
   : undefined;

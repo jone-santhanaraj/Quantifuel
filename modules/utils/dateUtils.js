@@ -11,6 +11,7 @@ const getCurrentDateTime = () => {
     minute: '2-digit',
     second: '2-digit',
   });
+  const milliseconds = String(now.getMilliseconds()).padStart(3, '0');
   const timeZoneOffsetInMinutes = now.getTimezoneOffset();
   const timeZoneOffsetSign = timeZoneOffsetInMinutes > 0 ? '-' : '+';
   const absTimeZoneOffsetInMinutes = Math.abs(timeZoneOffsetInMinutes);
@@ -21,7 +22,7 @@ const getCurrentDateTime = () => {
   const minutes = String(absTimeZoneOffsetInMinutes % 60).padStart(2, '0');
 
   const gmtOffset = `GMT${timeZoneOffsetSign}${hours}:${minutes}`;
-  return `${date}-${time}~${gmtOffset}`;
+  return `${date}-${time}:${milliseconds}~${gmtOffset}`;
 };
 
 const getExpireAfterDateTime = (hoursToAdd) => {

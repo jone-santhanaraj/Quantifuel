@@ -23,6 +23,10 @@ const connectMongoose = async (params) => {
         `mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_DATABASE}?authMechanism=${MONGODB_AUTHMECHANISM}&authSource=${MONGODB_AUTHSOURCE}`,
         params
       );
+      // await mongoose.connect(
+      //   `mongodb://${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_DATABASE}?authMechanism=${MONGODB_AUTHMECHANISM}&authSource=${MONGODB_AUTHSOURCE}`,
+      //   params
+      // );
 
       const { connection } = mongoose;
 
