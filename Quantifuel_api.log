@@ -330,3 +330,2024 @@
 
 [Quantifuel] [13/07/2024-20:33:51:157~GMT+05:30] [log] Server listening at http://127.0.0.1:5344/ has been stopped on command.
 
+[Quantifuel] [14/07/2024-02:20:34:107~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:20:34:239~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:20:34:494~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:20:34:498~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:20:48:563~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:20:48:598~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:20:48:679~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:20:48:681~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:21:32:067~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:21:32:099~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:21:32:230~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:21:32:232~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:21:35:699~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:21:35:736~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:21:35:804~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:21:35:805~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:21:37:315~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:21:37:360~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:21:37:501~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:21:37:506~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:21:38:798~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:21:38:825~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:21:38:887~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:21:38:889~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:21:42:841~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:21:42:871~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:21:42:938~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:21:42:940~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:22:19:363~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:22:19:415~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:22:19:527~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:22:19:531~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:22:24:617~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:22:24:646~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:22:24:698~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:22:24:700~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:22:45:243~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:22:45:270~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:22:45:325~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:22:45:327~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:22:49:838~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:22:49:866~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:22:49:934~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:22:49:937~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:22:51:541~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:22:51:569~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:22:51:639~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:22:51:641~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:22:57:208~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:22:57:246~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:22:57:345~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:22:57:347~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:23:01:815~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:23:01:849~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:23:01:904~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:23:01:906~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:23:06:032~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:23:06:064~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:23:06:117~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:23:06:119~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:23:29:674~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:23:29:703~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:23:29:756~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:23:29:758~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:23:36:079~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:23:36:118~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:23:36:252~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:23:36:256~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:23:37:472~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:23:37:509~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:23:37:595~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:23:37:597~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:23:43:810~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:23:43:843~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:23:43:941~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:23:43:944~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:23:45:095~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:23:45:123~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:23:45:196~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:23:45:198~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:23:49:359~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:23:49:401~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:23:49:486~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:23:49:488~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:23:51:256~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:23:51:284~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:23:51:350~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:23:51:352~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:24:12:063~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:24:12:088~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:24:12:139~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:24:12:141~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:24:21:125~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:24:21:157~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:24:21:218~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:24:21:220~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:24:22:889~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:24:22:915~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:24:22:969~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:24:22:971~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:24:30:866~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:24:30:908~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:24:30:994~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:24:30:996~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:24:36:751~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:24:36:777~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:24:36:830~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:24:36:832~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:24:39:151~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:24:39:178~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:24:39:234~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:24:39:236~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:24:47:267~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:24:47:312~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:24:47:395~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:24:47:398~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:24:48:573~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:24:48:604~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:24:48:734~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:24:48:735~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:24:50:034~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:24:50:069~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:24:50:148~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:24:50:151~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:24:52:261~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:24:52:289~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:24:52:368~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:24:52:370~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:24:54:272~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:24:54:298~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:24:54:350~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:24:54:352~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:25:10:280~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:25:10:318~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:25:10:418~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:25:10:420~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:25:38:710~GMT+05:30] [log] UFSIN generated: 73c2c5
+
+[Quantifuel] [14/07/2024-02:27:32:150~GMT+05:30] [log] UPIN generated: 73c2c5-733d84f7
+
+[Quantifuel] [14/07/2024-02:27:32:151~GMT+05:30] [error] QR Code generation failed: {}
+
+[Quantifuel] [14/07/2024-02:27:32:158~GMT+05:30] [log] QR Code generated for UPIN: 73c2c5-733d84f7
+
+[Quantifuel] [14/07/2024-02:29:47:011~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:29:47:035~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:29:47:088~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:29:47:089~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:29:54:719~GMT+05:30] [log] UFSIN generated: 93c880
+
+[Quantifuel] [14/07/2024-02:30:06:848~GMT+05:30] [log] UPIN generated: 93c880-9b4f8daa
+
+[Quantifuel] [14/07/2024-02:30:06:850~GMT+05:30] [error] QR Code generation failed: {}
+
+[Quantifuel] [14/07/2024-02:30:06:856~GMT+05:30] [log] QR Code generated for UPIN: 93c880-9b4f8daa
+
+[Quantifuel] [14/07/2024-02:31:14:642~GMT+05:30] [log] Stopping server...
+
+[Quantifuel] [14/07/2024-02:35:01:506~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:35:01:541~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:35:01:612~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:35:01:613~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:35:08:151~GMT+05:30] [log] UFSIN generated: e9848e
+
+[Quantifuel] [14/07/2024-02:35:17:239~GMT+05:30] [log] UPIN generated: e9848e-c34df340
+
+[Quantifuel] [14/07/2024-02:37:48:644~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:37:48:691~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:37:48:843~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:37:48:847~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:38:00:079~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:38:00:112~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:38:00:179~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:38:00:181~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:38:31:272~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:38:31:310~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:38:31:437~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:38:31:441~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:38:45:016~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:38:45:080~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:38:45:206~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:38:45:210~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:41:12:337~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:41:12:384~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:41:13:850~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:41:13:879~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:41:13:943~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:41:13:945~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:41:18:773~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:41:18:808~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:41:18:872~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:41:18:873~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:41:47:020~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:41:47:049~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:41:47:104~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:41:47:106~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:41:56:179~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:41:56:237~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:41:56:325~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:41:56:327~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:42:23:180~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:42:23:216~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:42:23:268~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:42:23:270~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:48:56:271~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:48:56:309~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:48:56:384~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:48:56:386~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:49:43:984~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:49:44:010~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:49:44:065~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:49:44:067~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:49:52:071~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:49:52:114~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:49:52:193~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:49:52:194~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:49:53:915~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:49:53:942~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:49:54:019~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:49:54:021~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:50:21:086~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:50:21:124~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:50:21:209~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:50:21:212~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:50:25:351~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:50:25:383~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:50:25:444~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:50:25:446~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:50:48:213~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:50:48:243~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:50:48:328~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:50:48:331~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:50:51:498~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:50:51:529~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:50:51:598~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:50:51:601~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:50:57:054~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:50:57:098~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:50:57:210~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:50:57:212~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:51:03:850~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:51:03:881~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:51:03:945~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:51:03:947~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:51:17:888~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:51:17:951~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:51:18:106~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:51:18:111~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:51:21:745~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:51:21:805~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:51:21:952~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:51:21:955~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:51:23:869~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:51:23:919~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:51:24:020~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:51:24:021~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:53:32:537~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:53:32:572~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:53:32:667~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:53:32:669~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:53:47:955~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:53:48:010~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:53:48:114~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:53:48:116~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:53:50:527~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:53:50:551~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:53:50:603~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:53:50:605~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:54:08:853~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:54:08:887~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:54:08:953~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:54:08:955~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:54:24:615~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:54:24:658~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:54:24:743~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:54:24:745~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:57:42:284~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:57:42:329~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:57:42:396~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:57:42:398~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:59:42:656~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:59:42:699~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:59:42:789~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:59:42:791~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:59:47:500~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:59:47:530~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:59:47:614~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:59:47:615~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:59:48:908~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:59:48:940~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:59:49:003~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:59:49:004~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:59:50:251~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:59:50:279~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:59:50:341~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:59:50:343~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:59:51:990~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:59:52:034~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:59:52:114~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:59:52:115~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:59:54:044~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:59:54:073~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:59:54:142~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:59:54:144~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-02:59:57:245~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-02:59:57:276~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-02:59:57:330~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-02:59:57:331~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:02:41:321~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:02:41:385~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:02:41:506~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:02:41:508~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:07:14:314~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:07:14:361~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:07:14:439~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:07:14:441~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:07:14:548~GMT+05:30] [log] Fuel Station created: {
+  "ufsin": "a4652f",
+  "name": "JaYeS Fillers",
+  "address": "154, Jayes Nagar, Main road, Kumbakonam",
+  "pumps": [],
+  "_id": "6692f38a0db09153ebb2e94c",
+  "createdAt": "2024-07-13T21:37:14.538Z",
+  "updatedAt": "2024-07-13T21:37:14.538Z",
+  "__v": 0
+}
+
+[Quantifuel] [14/07/2024-03:09:48:619~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:09:48:660~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:09:48:726~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:09:48:728~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:10:03:288~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:10:03:315~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:10:03:370~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:10:03:371~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:10:09:801~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:10:09:828~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:10:09:878~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:10:09:879~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:13:56:395~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:13:56:426~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:13:56:490~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:13:56:492~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:13:58:275~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:13:58:310~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:13:58:396~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:13:58:398~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:14:02:491~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:14:02:519~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:14:02:574~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:14:02:576~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:14:07:036~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:14:07:081~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:14:07:188~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:14:07:191~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:15:14:271~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:15:14:305~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:15:14:380~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:15:14:382~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:15:16:107~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:15:16:137~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:15:16:199~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:15:16:202~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:15:31:481~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:15:31:512~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:15:31:586~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:15:31:588~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:15:32:907~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:15:32:939~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:15:33:032~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:15:33:033~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:15:34:407~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:15:34:433~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:15:34:484~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:15:34:485~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:15:37:075~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:15:37:112~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:15:37:190~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:15:37:195~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:15:38:773~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:15:38:803~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:15:38:868~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:15:38:870~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:15:50:348~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:15:50:377~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:15:50:431~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:15:50:432~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:15:56:279~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:15:56:317~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:15:56:388~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:15:56:390~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:15:58:583~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:15:58:632~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:15:58:718~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:15:58:720~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:15:59:658~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:15:59:687~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:15:59:740~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:15:59:741~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:16:09:359~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:16:09:389~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:16:09:480~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:16:09:482~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:16:10:826~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:16:10:858~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:16:10:940~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:16:10:942~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:16:31:380~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:16:31:543~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:16:31:750~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:16:31:755~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:16:42:966~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:16:42:991~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:16:43:043~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:16:43:044~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:16:58:341~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:16:58:369~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:16:58:430~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:16:58:432~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:17:04:635~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:17:04:694~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:17:04:811~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:17:05:914~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:17:05:965~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:17:06:061~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:17:06:065~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:17:07:433~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:17:07:476~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:17:07:556~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:17:07:558~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:17:11:173~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:17:11:223~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:17:11:316~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:17:11:318~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:17:23:689~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:17:23:744~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:17:23:859~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:17:23:861~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:17:25:338~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:17:25:379~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:17:25:466~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:17:25:468~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:17:27:228~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:17:27:258~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:17:27:328~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:17:27:329~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:17:31:930~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:17:31:969~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:17:32:051~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:17:32:052~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:17:34:559~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:17:34:592~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:17:34:662~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:17:34:664~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:17:36:116~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:17:36:148~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:17:36:221~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:17:36:223~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:17:44:143~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:17:44:184~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:17:44:285~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:17:44:287~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:17:57:365~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:17:57:396~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:17:57:461~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:17:57:464~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:18:04:563~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:18:04:589~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:18:04:640~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:18:04:641~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:18:06:977~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:18:07:013~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:18:07:091~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:18:07:093~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:18:09:636~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:18:09:673~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:18:09:738~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:18:09:739~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:18:30:001~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:18:30:032~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:18:30:096~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:18:30:097~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:19:37:389~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:19:37:476~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:19:39:163~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:19:39:215~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:19:39:314~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:19:39:318~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:19:42:288~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:19:42:317~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:19:42:378~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:19:42:380~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:19:55:218~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:19:55:265~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:19:55:351~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:19:55:352~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:19:56:648~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:19:56:688~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:19:56:767~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:19:56:769~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:21:25:729~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:21:25:780~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:21:25:877~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:21:25:882~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:21:28:672~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:21:28:709~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:21:28:777~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:21:28:778~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:21:43:743~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:21:43:772~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:21:43:835~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:21:43:836~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:21:49:686~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:21:49:714~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:21:49:775~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:21:49:776~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:21:55:670~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:21:55:731~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:21:55:870~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:21:55:873~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:22:01:654~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:22:01:700~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:22:01:789~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:22:01:792~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:22:20:056~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:22:20:093~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:22:20:174~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:22:20:176~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:22:23:098~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:22:23:144~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:22:23:223~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:22:23:225~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:22:28:938~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:22:28:972~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:22:29:042~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:22:29:044~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:22:32:979~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:22:33:011~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:22:33:082~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:22:33:083~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:23:17:234~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:23:17:265~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:23:17:336~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:23:17:338~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:23:18:978~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:23:19:015~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:23:19:098~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:23:19:099~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:23:32:983~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:23:33:011~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:23:33:072~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:23:33:073~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:23:34:575~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:23:34:613~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:23:34:706~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:23:34:708~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:25:10:167~GMT+05:30] [log] Bad request - Name and address required
+
+[Quantifuel] [14/07/2024-03:25:25:563~GMT+05:30] [log] QR Code generated and saved at: C:\Users\jones\Documents\GitHub\Quantifuel\public\qrcodes/a4652f-8a07636f.png for a4652f-8a07636f
+
+[Quantifuel] [14/07/2024-03:26:16:339~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:26:16:400~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:26:16:539~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:26:16:544~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:28:26:431~GMT+05:30] [log] QR Code generated and saved at: C:\Users\jones\Documents\GitHub\Quantifuel\public\qrcodes/a4652f-e7fb4316.png for a4652f-e7fb4316
+
+[Quantifuel] [14/07/2024-03:29:06:257~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:29:06:302~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:29:06:394~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:29:06:396~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:29:33:125~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:29:33:165~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:29:33:236~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:29:33:238~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:29:37:175~GMT+05:30] [log] QR Code generated and saved at: C:\Users\jones\Documents\GitHub\Quantifuel\public\qrcodes/a4652f-e56a7285.png for a4652f-e56a7285
+
+[Quantifuel] [14/07/2024-03:30:12:259~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:30:12:317~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:30:12:450~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:30:12:452~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:30:15:192~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:30:15:236~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:30:15:327~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:30:15:330~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:30:18:057~GMT+05:30] [log] QR Code generated and saved at: C:\Users\jones\Documents\GitHub\Quantifuel\public\qrcodes/a4652f-702dd70c.png for a4652f-702dd70c
+
+[Quantifuel] [14/07/2024-03:31:36:677~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:31:36:707~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:31:36:768~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:31:36:769~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:31:42:597~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:31:42:658~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:31:43:857~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:31:43:892~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:31:43:958~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:31:43:959~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:31:45:382~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:31:45:412~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:31:45:484~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:31:45:485~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:31:57:132~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:31:57:170~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:31:57:251~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:31:57:252~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:32:06:866~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:32:06:934~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:32:07:050~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:32:07:052~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:32:10:038~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:32:10:078~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:32:10:188~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:32:10:191~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:32:17:399~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:32:17:443~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:32:17:559~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:32:17:569~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:32:22:248~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:32:22:281~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:32:22:361~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:32:22:363~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:32:31:039~GMT+05:30] [log] Pump created successfully: {
+  upin: 'a4652f-82439cbd',
+  qrUrl: 'http://127.0.0.1:5344/public/qrcodes/a4652f-82439cbd.png',
+  fuelType: 'Petrol',
+  status: 'available',
+  currentTransaction: null,
+  fuelStation: new ObjectId('6692f38a0db09153ebb2e94c'),
+  operator: null,
+  _id: new ObjectId('6692f97688bf36d0c63d0e49'),
+  createdAt: 2024-07-13T22:02:31.017Z,
+  updatedAt: 2024-07-13T22:02:31.017Z,
+  __v: 0
+} at station: {
+  _id: new ObjectId('6692f38a0db09153ebb2e94c'),
+  ufsin: 'a4652f',
+  name: 'JaYeS Fillers',
+  address: '154, Jayes Nagar, Main road, Kumbakonam',
+  pumps: [],
+  createdAt: 2024-07-13T21:37:14.538Z,
+  updatedAt: 2024-07-13T21:37:14.538Z,
+  __v: 0
+}
+
+[Quantifuel] [14/07/2024-03:32:31:058~GMT+05:30] [log] QR Code generated and saved at: C:\Users\jones\Documents\GitHub\Quantifuel\public\qrcodes/a4652f-82439cbd.png for a4652f-82439cbd
+
+[Quantifuel] [14/07/2024-03:35:06:204~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:35:06:277~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:35:06:364~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:35:06:367~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:35:09:480~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:35:09:507~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:35:09:564~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:35:09:566~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:35:15:763~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:35:15:812~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:35:15:903~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:35:15:905~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:35:19:019~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:35:19:047~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:35:19:109~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:35:19:110~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:35:46:666~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [14/07/2024-03:35:46:693~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [14/07/2024-03:35:46:753~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [14/07/2024-03:35:46:756~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [14/07/2024-03:36:32:725~GMT+05:30] [log] Stopping server...
+
+[Quantifuel] [14/07/2024-03:36:33:741~GMT+05:30] [log] Server listening at http://127.0.0.1:5344/ has been stopped on command.
+

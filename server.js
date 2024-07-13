@@ -1,9 +1,35 @@
+//------------------------------
+//  AUTHOR: jone_santhanaraj
+//------------------------------
+
+// REQUIRE LIBRARIES / START
+
 const express = require('express');
+const dotenv = require('dotenv');
+const qr = require('qrcode');
+const fs = require('fs');
+const path = require('path');
+const crypto = require('crypto');
+
+// REQUIRE LIBRARIES / END
+
+// LIBRARY CONFIG / START
+
 const quantifuel = express();
-require('dotenv').config();
+dotenv.config();
+
+// LIBRARY CONFIG / END
+
+// REQUIRE MODULES / START
 
 const print = require('./modules/utils/consoleUtils');
 const { mongodb, connectMongoose } = require('./modules/config/mongoose');
+
+const routes = require('./modules/routes');
+
+// REQUIRE MODULES / END
+
+// VARIABLES AND ATTRIBUTES / START
 
 const PROTOCOL = process.env.PROTOCOL || 'http';
 const HOST = process.env.HOST || 'localhost';
@@ -12,6 +38,20 @@ const PORT = process.env.PORT || 5344;
 const allowedOrigins = process.env.ALLOWED_ORIGINS || 'http://localhost:5345';
 
 const logFileName = process.env.LOG_FILE_NAME;
+
+// VARIABLES AND ATTRIBUTES / START
+
+// MIDDLEWARES / START
+
+quantifuel.use(express.json());
+
+quantifuel.use(express.static(path.join(__dirname, './public')));
+
+quantifuel.use(routes);
+
+// MIDDLEWARES / END
+
+// GET - POST - PUT - DELETE / START
 
 quantifuel.get('/api', (req, res) => {
   print.log('someone accessed the server');
@@ -30,6 +70,10 @@ quantifuel.get('/api/initTrans', (req, res) => {
     user_loc_coords: '1012313-2112312-1231123-3244234',
   });
 });
+
+// GET - POST - PUT - DELETE / END
+
+// SERVER CONFIG / START
 
 const startServer = async () => {
   consoleout.log('\x1b[32mInitiating...\x1b[0m');
@@ -129,13 +173,4 @@ process.stdin.on('data', (data) => {
   processConsoleCommand(command);
 });
 
-// quantifuel.listen(3000, () => {
-//   mongodb.connect(
-//     process.env.DB_CONNECT,
-//     { useNewUrlParser: true, useUnifiedTopology: true },
-//     () => {
-//       console.log('Database connection suceeded!');
-//     }
-//   );
-//   console.log('Server is running on port 3000');
-// });
+// SERVER CONFIG / END

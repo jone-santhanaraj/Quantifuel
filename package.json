@@ -1,6 +1,6 @@
 {
   "name": "quantifuel",
-  "version": "1.0.0",
+  "version": "0.00.0010",
   "description": "Automated Fuel Dispensing and Fuel Station Management",
   "main": "server.js",
   "scripts": {
@@ -17,7 +17,8 @@
     "circular-json": "^0.5.9",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "mongoose": "^8.5.0"
+    "mongoose": "^8.5.0",
+    "qrcode": "^1.5.3"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
