@@ -1,3 +1,7 @@
+//------------------------------
+//  AUTHOR: jone_santhanaraj
+//------------------------------
+
 const getCurrentDateTime = () => {
   const now = new Date();
   const date = now.toLocaleDateString('en-GB', {

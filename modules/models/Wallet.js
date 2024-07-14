@@ -1,3 +1,7 @@
+//------------------------------
+//  AUTHOR: jone_santhanaraj
+//------------------------------
+
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
@@ -9,7 +13,10 @@ const WalletSchema = new Schema(
       required: true,
       unique: true,
     },
-    balance: { type: Number, default: 0 },
+    balance: {
+      iv: { type: String, required: true },
+      content: { type: String, required: true },
+    },
     transactions: [
       {
         type: { type: String, enum: ['credit', 'debit'], required: true },

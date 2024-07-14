@@ -1,10 +1,14 @@
+//------------------------------
+//  AUTHOR: jone_santhanaraj
+//------------------------------
+
 const express = require('express');
 const crypto = require('crypto');
-const qr = require('qrcode');
-const fs = require('fs');
-const path = require('path');
 
 const print = require('../utils/consoleUtils');
+
+const { generateUFSIN } = require('../utils/ufsinUtils');
+const { generateUPIN, generateQRCode } = require('../utils/upinUtils');
 
 const Pump = require('../models/Pump');
 const FuelStation = require('../models/FuelStation');
@@ -12,41 +16,7 @@ const FuelStation = require('../models/FuelStation');
 const host = process.env.HOST || 'localhost';
 const port = process.env.PORT || 3000;
 
-const qrCodesDir = path.join(__dirname, '../../public/qrcodes');
-if (!fs.existsSync(qrCodesDir)) {
-  fs.mkdirSync(qrCodesDir);
-}
-
 const admin = express.Router();
-
-const generateUniqueId = (length) => {
-  return crypto
-    .randomBytes(Math.ceil(length / 2))
-    .toString('hex')
-    .slice(0, length);
-};
-
-const generateQRCode = (data, fileName) => {
-  const qrCodePath = path.join(qrCodesDir, `${fileName}.png`);
-  qr.toFile(
-    qrCodePath,
-    data,
-    // {
-    //   version: 10, // Adjust version (1 to 40, where 1 is smallest and 40 is largest)
-    // },
-    (err) => {
-      if (err) {
-        print.error(`Error generating QR code for ${fileName} :`, err);
-        return;
-      }
-      print.log(
-        `QR Code generated and saved at: ${qrCodesDir}/${fileName}.png for ${fileName}`
-      );
-      return;
-    }
-  );
-  return qrCodePath;
-};
 
 admin.post('/create-fuel-station', async (req, res) => {
   try {
@@ -57,7 +27,7 @@ admin.post('/create-fuel-station', async (req, res) => {
         .status(400)
         .json({ error: 'BAD REQUEST - NAME AND ADDRESS REQUIRED' });
     }
-    const ufsin = generateUniqueId(6);
+    const ufsin = generateUFSIN();
     const fuelStation = new FuelStation({
       ufsin,
       name,
@@ -88,7 +58,7 @@ admin.post('/create-pump', async (req, res) => {
     return res.status(404).json({ error: 'FUEL STATION NOT FOUND' });
   }
   try {
-    const upin = `${ufsin}-${generateUniqueId(8)}`;
+    const upin = `${ufsin}-${generateUPIN()}`;
 
     generateQRCode(upin, upin);
 
@@ -101,7 +71,10 @@ admin.post('/create-pump', async (req, res) => {
       status: 'available',
       fuelStation: fuelStation._id,
     });
-    await pump.save();
+    const newPump = await pump.save();
+
+    fuelStation.pumps.push(newPump._id);
+    await fuelStation.save();
 
     print.log(`Pump created successfully: ${pump} at station: ${fuelStation}`);
 

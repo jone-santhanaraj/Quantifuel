@@ -24,14 +24,24 @@ Quantifuel is designed to address the challenges faced in fuel stations, focusin
 ## Features
 
 - **Fuel Station Management**
-
   - Create, update, and manage fuel stations.
   - Assign serialized pumps to each station.
 
 - **Pump Serialization**
-
   - Generate unique identification numbers (UPINs) for each pump.
   - QR code generation for easy identification and tracking.
+
+- **User and Transaction Serialization**
+  - Assign unique identification numbers to every individual pump, fuel station, and user, including fuel station admins and pump operators.
+  - Fuel stations are assigned a unique 6-digit hexadecimal code called UFSIN (Unique Fuel Station Identification Number).
+  - Pumps are assigned a unique 4-digit hexadecimal code called UPIN (Unique Pump Identification Number).
+  - Every user is assigned a unique 8-digit hexadecimal code called UUIN (Unique User Identification Number).
+  - Every transaction is assigned a unique 8-digit hexadecimal code called UTIN (Unique Transaction Identification Number).
+  - The use of hexadecimal codes provides the highest possible number of pumps, fuel stations, and user base in our system, with numbers reaching up to:
+    - Sixty-five thousand, five hundred thirty-six possible unique pumps in a single fuel station.
+    - Sixteen million, seven hundred seventy-seven thousand, two hundred sixteen possible unique fuel stations.
+    - Four billion, two hundred ninety-four million, nine hundred sixty-seven thousand, two hundred ninety-six possible unique user accounts.
+    - Four billion, two hundred ninety-four million, nine hundred sixty-seven thousand, two hundred ninety-six possible unique transactions per pump.
 
 - **Transaction Transparency**
   - Record and monitor fuel transactions.
@@ -49,11 +59,11 @@ Quantifuel is designed to address the challenges faced in fuel stations, focusin
 
 1. Clone the repository:
 
-- git clone https://github.com/jone-santhanaraj/Quantifuel.git
-- cd Quantifuel
+- `git clone https://github.com/jone-santhanaraj/Quantifuel.git`
+- `cd Quantifuel`
 
 2. Install dependencies:
-- npm install
+- `npm install`
 
 3. Set up environment variables:
 
@@ -61,25 +71,24 @@ Quantifuel is designed to address the challenges faced in fuel stations, focusin
 - Define environment variables like `PORT`, `MONGODB_URI`, etc.
 
 4. Start the server:
-
-- npm start
+- `npm start`
 
 ## Usage
 
 - **Creating a Fuel Station**:
-- Use the API endpoint to create a new fuel station.
-- Provide required details such as name and address.
+  - Use the API endpoint to create a new fuel station.
+  - Provide required details such as name and address.
 
 - **Managing Pumps**:
-- Generate UPINs for pumps associated with each fuel station.
-- Monitor pump status and transaction history.
+  - Generate UPINs for pumps associated with each fuel station.
+  - Monitor pump status and transaction history.
 
 ## API Documentation
 
 - **Endpoints**:
-- `POST /api/fuel-stations`: Create a new fuel station.
-- `POST /api/fuel-stations/:ufsin/pumps`: Create a pump for a specific fuel station.
-- `GET /api/fuel-stations/:ufsin/pumps/:upin/qr-code`: Retrieve QR code for a pump.
+  - `POST /api/fuel-stations`: Create a new fuel station.
+  - `POST /api/fuel-stations/:ufsin/pumps`: Create a pump for a specific fuel station.
+  - `GET /api/fuel-stations/:ufsin/pumps/:upin/qr-code`: Retrieve QR code for a pump.
 
 - **Detailed API documentation**: Available in `API.md`.
 

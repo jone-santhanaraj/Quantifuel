@@ -1,3 +1,7 @@
+//------------------------------
+//  AUTHOR: jone_santhanaraj
+//------------------------------
+
 const fs = require('fs');
 const path = require('path');
 const CircularJSON = require('circular-json');
