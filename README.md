@@ -24,24 +24,43 @@ Quantifuel is designed to address the challenges faced in fuel stations, focusin
 ## Features
 
 - **Fuel Station Management**
+
   - Create, update, and manage fuel stations.
   - Assign serialized pumps to each station.
 
 - **Pump Serialization**
+
   - Generate unique identification numbers (UPINs) for each pump.
   - QR code generation for easy identification and tracking.
 
 - **User and Transaction Serialization**
+
   - Assign unique identification numbers to every individual pump, fuel station, and user, including fuel station admins and pump operators.
   - Fuel stations are assigned a unique 6-digit hexadecimal code called UFSIN (Unique Fuel Station Identification Number).
   - Pumps are assigned a unique 4-digit hexadecimal code called UPIN (Unique Pump Identification Number).
   - Every user is assigned a unique 8-digit hexadecimal code called UUIN (Unique User Identification Number).
   - Every transaction is assigned a unique 8-digit hexadecimal code called UTIN (Unique Transaction Identification Number).
   - The use of hexadecimal codes provides the highest possible number of pumps, fuel stations, and user base in our system, with numbers reaching up to:
-    - Sixty-five thousand, five hundred thirty-six possible unique pumps in a single fuel station.
-    - Sixteen million, seven hundred seventy-seven thousand, two hundred sixteen possible unique fuel stations.
-    - Four billion, two hundred ninety-four million, nine hundred sixty-seven thousand, two hundred ninety-six possible unique user accounts.
-    - Four billion, two hundred ninety-four million, nine hundred sixty-seven thousand, two hundred ninety-six possible unique transactions per pump.
+
+## <p style="text-align: center; margin-top: 50px;" title="Sixty-five thousand, five hundred thirty-six">65,536</p>
+
+<p style="text-align: center; margin-top: -30px;">POSSIBLE UNIQUE FUEL PUMP PER FUEL STATION</p>
+
+## <p style="text-align: center; margin-top: 50px;" title="Sixteen million, seven hundred seventy-seven thousand, two hundred sixteen">16,777,216</p>
+
+<p style="text-align: center; margin-top: -30px;">POSSIBLE UNIQUE FUEL STATIONS</p>
+
+## <p style="text-align: center; margin-top: 50px;" title="Four billion, two hundred ninety-four million, nine hundred sixty-seven thousand, two hundred ninety-six">4,294,967,296</p>
+
+<p style="text-align: center; margin-top: -30px;">POSSIBLE UNIQUE USER ACCOUNTS</p>
+
+## <p style="text-align: center; margin-top: 50px;" title="Four billion, two hundred ninety-four million, nine hundred sixty-seven thousand, two hundred ninety-six">4,294,967,296</p>
+
+<p style="text-align: center; margin-top: -30px;">POSSIBLE UNIQUE TRANSACTIONS PER PUMP</p>
+
+## <p style="text-align: center; margin-top: 50px;" title="Two nonillion, twenty-eight octillion, two hundred forty septillion, nine hundred sixty sextillion, three hundred sixty-five quintillion, one hundred sixty-seven quadrillion, forty-two trillion, three hundred ninety-four billion, seven hundred twenty-one million, two hundred eighty-six thousand, sixteen">2,028,240,960,365,167,042,394,721,286,016</p>
+
+<p style="text-align: center; margin-top: -30px; margin-bottom: 50px;">TOTAL POSSIBLE TRANSACTIONS</p>
 
 - **Transaction Transparency**
   - Record and monitor fuel transactions.
@@ -63,6 +82,7 @@ Quantifuel is designed to address the challenges faced in fuel stations, focusin
 - `cd Quantifuel`
 
 2. Install dependencies:
+
 - `npm install`
 
 3. Set up environment variables:
@@ -71,11 +91,13 @@ Quantifuel is designed to address the challenges faced in fuel stations, focusin
 - Define environment variables like `PORT`, `MONGODB_URI`, etc.
 
 4. Start the server:
+
 - `npm start`
 
 ## Usage
 
 - **Creating a Fuel Station**:
+
   - Use the API endpoint to create a new fuel station.
   - Provide required details such as name and address.
 
@@ -86,6 +108,7 @@ Quantifuel is designed to address the challenges faced in fuel stations, focusin
 ## API Documentation
 
 - **Endpoints**:
+
   - `POST /api/fuel-stations`: Create a new fuel station.
   - `POST /api/fuel-stations/:ufsin/pumps`: Create a pump for a specific fuel station.
   - `GET /api/fuel-stations/:ufsin/pumps/:upin/qr-code`: Retrieve QR code for a pump.
