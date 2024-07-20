@@ -1,0 +1,17 @@
+[Quantifuel] [21/07/2024-01:40:13:484~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [21/07/2024-01:40:13:603~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [21/07/2024-01:40:13:771~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [21/07/2024-01:40:13:776~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [21/07/2024-01:40:23:151~GMT+05:30] [log] Stopping server...
+
+[Quantifuel] [21/07/2024-01:40:24:199~GMT+05:30] [log] Server listening at http://127.0.0.1:5344/ has been stopped on command.
+
