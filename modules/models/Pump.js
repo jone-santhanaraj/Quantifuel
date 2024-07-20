@@ -8,7 +8,9 @@ const Schema = mongoose.Schema;
 const PumpSchema = new Schema(
   {
     upin: { type: String, required: true, unique: true },
-    qrUrl: { type: String, required: true, unique: true }, // Unique Pump Identification Number
+    ufsin: { type: String, required: true }, // Unique Fuel Station Identification Number
+    pin: { type: String, required: true }, // QR Data
+    qrUrl: { type: String }, // Unique Pump Identification Number
     fuelType: { type: String, required: true }, // e.g., 'Petrol', 'Diesel'
     status: {
       type: String,

@@ -7,7 +7,7 @@ const express = require('express');
 const Router = express.Router();
 
 const print = require('../utils/consoleUtils');
-const { generateUUIN } = require('../utils/uuinUtils');
+const { generateUniqueId } = require('../utils/uniqueIdUtils');
 
 const User = require('../models/User');
 
@@ -32,7 +32,8 @@ Router.post('/create-user', async (req, res) => {
         .json({ error: 'BAD REQUEST - NAME, EMAIL AND PASSWORD REQUIRED' });
     }
 
-    const uuin = generateUUIN();
+    // const uuin = generateUniqueId('uuin');
+    const uuin = '9e9bb366';
 
     const user = new User({
       uuin,
@@ -78,11 +79,23 @@ Router.post('/create-user', async (req, res) => {
     //   },                                   optional --
     // }
 
-    await user.save();
+    try {
+      await user.save();
+      print.log(`User created: ${user.name} - ${user.uuin}`);
 
-    print.log(`User created: ${user.name} - ${user.uuin}`);
+      res.json({ user });
+    } catch (err) {
+      if (err.name === 'MongoServerError' && err.code === 11000) {
+        print.error('UUIN already exists. Generating new UUIN');
+        user.uuin = generateUniqueId('uuin');
+        await user.save();
+        print.log(`User created: ${user.name} - ${user.uuin}`);
 
-    res.json({ user });
+        res.json({ user });
+      } else {
+        res.status(500).json({ error: 'INTERNAL SERVER ERROR' });
+      }
+    }
   } catch (error) {
     console.error('Error creating user:', error);
     res.status(500).json({ error: 'INTERNAL SERVER ERROR' });

@@ -24,7 +24,7 @@ const TransactionSchema = new Schema(
     },
     status: {
       type: String,
-      enum: ['initiated', 'completed', 'cancelled'],
+      enum: ['initiated', 'in-process', 'completed', 'cancelled'],
       default: 'initiated',
     },
     invoice: { type: String }, // URL or path to the e-invoice
