@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "quantifuel" "\0"
+            VALUE "CompanyName", "me.jonesanthanaraj" "\0"
+            VALUE "FileDescription", "Quantifuel" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "quantifuel" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "quantifuel.exe" "\0"
-            VALUE "ProductName", "quantifuel" "\0"
+            VALUE "InternalName", "Quantifuel" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2024 Jone Santhanaraj. All rights reserved." "\0"
+            VALUE "OriginalFilename", "Quantifuel.exe" "\0"
+            VALUE "ProductName", "Quantifuel" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
