@@ -1,8 +1,12 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:qr_code_scanner/qr_code_scanner.dart';
 
-import 'colors.dart';
+import 'utils/colors.dart';
+import 'tabs/home.dart';
+import 'tabs/scanQRCode.dart';
+import 'tabs/wallet.dart';
+import 'tabs/transactions.dart';
+import 'tabs/profile.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -12,10 +16,31 @@ void main() async {
   runApp(QuantifuelApp(camera: firstCamera));
 }
 
-class QuantifuelApp extends StatelessWidget {
+class QuantifuelApp extends StatefulWidget {
   final CameraDescription camera;
 
   QuantifuelApp({required this.camera});
+
+  @override
+  _QuantifuelAppState createState() => _QuantifuelAppState(camera: camera);
+}
+
+class _QuantifuelAppState extends State<QuantifuelApp> {
+  final CameraDescription camera;
+
+  _QuantifuelAppState({required this.camera});
+
+  String? _scanResult = "REAR VIEW CAMERA";
+
+  void updateResult(String result) {
+    setState(() {
+      _scanResult = result;
+    });
+  }
+
+  String? getResult() {
+    return _scanResult;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -25,225 +50,203 @@ class QuantifuelApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: QRScannerScreen(camera: camera),
+      home: HomePage(
+          camera: camera, updateResult: updateResult, getResult: getResult),
     );
   }
 }
 
-class QRScannerScreen extends StatefulWidget {
+class HomePage extends StatefulWidget {
   final CameraDescription camera;
+  final Function(String) updateResult;
+  final Function getResult;
 
-  QRScannerScreen({required this.camera});
+  HomePage(
+      {required this.camera,
+      required this.updateResult,
+      required this.getResult});
 
   @override
-  _QRScannerScreenState createState() => _QRScannerScreenState();
+  _HomePageState createState() => _HomePageState(
+      camera: camera, updateResult: updateResult, getResult: getResult);
 }
 
-class _QRScannerScreenState extends State<QRScannerScreen> {
-  final GlobalKey qrKey = GlobalKey(debugLabel: 'QR');
-  late QRViewController? _qrViewController;
-  String? _scanResult = "REAR VIEW CAMERA";
+class _HomePageState extends State<HomePage> {
+  final CameraDescription camera;
+  final Function(String) updateResult;
+  final Function getResult;
+
+  _HomePageState(
+      {required this.camera,
+      required this.updateResult,
+      required this.getResult});
+
+  int _selectedIndex = 0;
+  late Key _qrScannerKey;
+  late List<Widget> _widgetOptions;
 
   @override
-  void dispose() {
-    _qrViewController?.dispose();
-    super.dispose();
+  void initState() {
+    super.initState();
+    _qrScannerKey = UniqueKey();
+    _widgetOptions = <Widget>[
+      QRScannerScreen(
+          camera: camera,
+          updateResult: updateResult,
+          getResult: getResult,
+          key: _qrScannerKey),
+      Home(),
+      Transactions(),
+      Wallet(),
+      Profile(),
+      // Add more widgets here if needed for other tabs
+    ];
   }
 
-  void _onQRViewCreated(QRViewController controller) {
+  void _onItemTapped(int index) {
     setState(() {
-      _qrViewController = controller;
+      _selectedIndex = index;
     });
-    controller.scannedDataStream.listen((scanData) {
-      setState(() {
-        _scanResult = scanData.code!;
-      });
-      print('QR Code found: ${scanData.code}');
+    updateResult('REAR VIEW CAMERA');
+  }
+
+  void _onFabTapped() {
+    setState(() {
+      _qrScannerKey = UniqueKey();
+      _widgetOptions[0] = QRScannerScreen(
+          camera: camera,
+          updateResult: updateResult,
+          getResult: getResult,
+          key: _qrScannerKey);
+      _selectedIndex =
+          0; // Set the index for the QRScannerScreen or other widget
     });
+    updateResult('REAR VIEW CAMERA');
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title:
-            Text('Quantifuel', style: TextStyle(fontFamily: 'SansationBold')),
-        foregroundColor: Colors.white,
-        actions: [
-          IconButton(
-            icon: Icon(Icons.menu),
-            onPressed: () {
-              // Handle menu button press
-            },
+        appBar: AppBar(
+          title:
+              Text('Quantifuel', style: TextStyle(fontFamily: 'SansationBold')),
+          foregroundColor: Colors.white,
+          actions: [
+            IconButton(
+              icon: Icon(Icons.menu),
+              onPressed: () {
+                // Handle menu button press
+              },
+            ),
+          ],
+          flexibleSpace: Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: <Color>[
+                  AppColors.appBarTopRed,
+                  AppColors.appBarBottomRed
+                ],
+              ),
+            ),
           ),
-        ],
-        flexibleSpace: Container(
-          decoration: const BoxDecoration(
+        ),
+        body: _widgetOptions[_selectedIndex],
+        bottomNavigationBar: Container(
+          decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
-              colors: <Color>[
-                AppColors.appBarTopRed,
-                AppColors.appBarBottomRed
+              colors: [
+                AppColors.footerBarTopRed,
+                AppColors.footerBarBottomRed,
+              ],
+            ),
+          ),
+          child: BottomAppBar(
+            color:
+                Colors.transparent, // Make the BottomAppBar's color transparent
+            shape: CircularNotchedRectangle(),
+            notchMargin: 5.0,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                IconButton(
+                  icon: Image.asset(
+                    'assets/icons/home.png',
+                    color: Color.fromRGBO(255, 255, 255, 0.75),
+                    width: 30,
+                  ),
+                  onPressed: () {
+                    _onItemTapped(1); // Handle home button press
+                  },
+                ),
+                IconButton(
+                  icon: Image.asset(
+                    'assets/icons/receipt.png',
+                    color: Color.fromRGBO(255, 255, 255, 0.75),
+                    width: 30,
+                  ),
+                  onPressed: () {
+                    _onItemTapped(2); // Handle receipt button press
+                  },
+                ),
+                SizedBox(width: 40), // The dummy child for spacing
+                IconButton(
+                  icon: Image.asset(
+                    'assets/icons/history.png',
+                    color: Color.fromRGBO(255, 255, 255, 0.75),
+                    width: 30,
+                  ),
+                  onPressed: () {
+                    _onItemTapped(3); // Handle history button press
+                  },
+                ),
+                IconButton(
+                  icon: Image.asset(
+                    'assets/icons/profile.png',
+                    color: Color.fromRGBO(255, 255, 255, 0.75),
+                    width: 30,
+                  ),
+                  onPressed: () {
+                    _onItemTapped(4); // Handle profile button press
+                  },
+                ),
               ],
             ),
           ),
         ),
-      ),
-      body: Align(
-        alignment: Alignment.center,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+        floatingActionButton: Stack(
+          alignment: Alignment.center,
           children: [
-            SizedBox(height: 20),
-            Text(
-              'Scan a Pump QR',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: 20),
             Container(
-              height: 300,
-              width: 300,
-              child: Stack(
-                children: [
-                  QRView(
-                    key: qrKey,
-                    onQRViewCreated: _onQRViewCreated,
-                    overlay: QrScannerOverlayShape(
-                      borderColor: Colors.green,
-                      borderRadius: 10,
-                      borderLength: 30,
-                      borderWidth: 10,
-                      cutOutSize: 300,
-                    ),
-                  ),
-                  Center(
-                    child: Stack(
-                      children: [
-                        // Horizontal bar of the cross
-                        Positioned(
-                          left: 127.5,
-                          top: 150,
-                          child: Container(
-                            width: 50,
-                            height: 4,
-                            color: Colors.green,
-                          ),
-                        ),
-                        // Vertical bar of the cross
-                        Positioned(
-                          left: 150,
-                          top: 127.5,
-                          child: Container(
-                            width: 4,
-                            height: 50,
-                            color: Colors.green,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
+              width: 75,
+              height: 75,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                gradient: RadialGradient(
+                  center: Alignment.center,
+                  radius: 0.75,
+                  colors: [
+                    AppColors.scannerBtnCenterRed,
+                    AppColors.scannerBtnOuterRed,
+                  ],
+                ),
               ),
             ),
-            SizedBox(height: 10),
-            Text(
-              'Place the QR Code within the above green box',
-              style: TextStyle(fontSize: 16),
-            ),
-            SizedBox(height: 20),
-            Text(
-              'Scan Result: $_scanResult',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            FloatingActionButton(
+              onPressed: _onFabTapped,
+              child: Transform.scale(
+                scale: 1.12,
+                child: Image.asset('assets/icons/qr_code_scanner.png',
+                    color: Colors.white),
+              ),
+              backgroundColor: Colors.transparent,
+              // elevation: 0,
             ),
           ],
-        ),
-      ),
-      bottomNavigationBar: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              AppColors.footerBarTopRed,
-              AppColors.footerBarBottomRed,
-            ],
-          ),
-        ),
-        child: BottomAppBar(
-          color:
-              Colors.transparent, // Make the BottomAppBar's color transparent
-          shape: CircularNotchedRectangle(),
-          notchMargin: 5.0,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              IconButton(
-                icon: Image.asset('assets/icons/home.png', color: Colors.white),
-                onPressed: () {
-                  // Handle home button press
-                },
-              ),
-              IconButton(
-                icon: Image.asset('assets/icons/receipt.png',
-                    color: Colors.white),
-                onPressed: () {
-                  // Handle receipt button press
-                },
-              ),
-              SizedBox(width: 40), // The dummy child for spacing
-              IconButton(
-                icon: Image.asset('assets/icons/history.png',
-                    color: Colors.white),
-                onPressed: () {
-                  // Handle history button press
-                },
-              ),
-              IconButton(
-                icon: Image.asset('assets/icons/profile.png',
-                    color: Colors.white),
-                onPressed: () {
-                  // Handle profile button press
-                },
-              ),
-            ],
-          ),
-        ),
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: Stack(
-        alignment: Alignment.center,
-        children: [
-          Container(
-            width: 75,
-            height: 75,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              gradient: RadialGradient(
-                center: Alignment.center,
-                radius: 0.75,
-                colors: [
-                  AppColors.scannerBtnCenterRed,
-                  AppColors.scannerBtnOuterRed,
-                ],
-              ),
-            ),
-          ),
-          FloatingActionButton(
-            onPressed: () {
-              _scanResult = 'REAR VIEW CAMERA';
-            },
-            child: Transform.scale(
-              scale: 1.15,
-              child: Image.asset('assets/icons/qr_code_scanner.png',
-                  color: Colors.white),
-            ),
-            backgroundColor: Colors.transparent,
-            elevation: 0,
-          ),
-        ],
-      ),
-    );
+        ));
   }
 }
