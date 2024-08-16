@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
 import '../utils/colors.dart';
+import '../utils/baseClient.dart';
 
 class QRScannerScreen extends StatefulWidget {
   final CameraDescription camera;
@@ -56,6 +57,25 @@ class _QRScannerScreenState extends State<QRScannerScreen> {
         });
         _qrViewController?.pauseCamera();
         print('QR Code found: ${scanData.code}');
+        InitTrans(upinin) async {
+          print("hello");
+          var uuin = "48629922";
+          var upin = upinin;
+          var amount = 10;
+          var response = await BaseClient()
+              .post('/system/init-transaction',
+                  '{"uuin": ${uuin}, "upin": ${upin}, "amount": ${amount}}')
+              .catchError((err) {
+            print(err);
+          });
+          if (response != null) {
+            print(response);
+            debugPrint(response);
+          }
+        }
+
+        ;
+        InitTrans(scanData.code!);
       }
     });
   }

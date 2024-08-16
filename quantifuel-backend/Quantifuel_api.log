@@ -15,3 +15,18 @@
 
 [Quantifuel] [21/07/2024-01:40:24:199~GMT+05:30] [log] Server listening at http://127.0.0.1:5344/ has been stopped on command.
 
+[Quantifuel] [17/08/2024-03:37:17:916~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [17/08/2024-03:37:18:014~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       127.0.0.1
+   Port:       27017
+   Database:   Quantifuel
+   Username:   jone_santhanaraj
+
+
+[Quantifuel] [17/08/2024-03:37:18:187~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [17/08/2024-03:37:18:188~GMT+05:30] [success] Server is up and running, listening at http://127.0.0.1:5344/
+
+[Quantifuel] [17/08/2024-04:31:19:997~GMT+05:30] [log] Generated new UTIN: 48629922-4570de-85e8-95cb688a
+
