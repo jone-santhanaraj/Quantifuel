@@ -1,37 +1,49 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:vibration/vibration.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
+import 'dart:convert';
 
 import '../utils/colors.dart';
-import '../utils/baseClient.dart';
+import '../utils/client.dart';
+
+import 'transactionInit.dart';
 
 class QRScannerScreen extends StatefulWidget {
   final CameraDescription camera;
   final Function(String) updateResult;
   final Function getResult;
+  final Function initTransactionPageSelect;
   final Key key;
 
   QRScannerScreen(
       {required this.camera,
       required this.updateResult,
       required this.getResult,
+      required this.initTransactionPageSelect,
       required this.key})
       : super(key: key);
 
   @override
   _QRScannerScreenState createState() => _QRScannerScreenState(
-      camera: camera, updateResult: updateResult, getResult: getResult);
+      camera: camera,
+      updateResult: updateResult,
+      getResult: getResult,
+      initTransactionPageSelect: initTransactionPageSelect);
 }
 
 class _QRScannerScreenState extends State<QRScannerScreen> {
   final CameraDescription camera;
   final Function(String) updateResult;
   final Function getResult;
+  final Function initTransactionPageSelect;
 
   _QRScannerScreenState({
     required this.camera,
     required this.updateResult,
     required this.getResult,
+    required this.initTransactionPageSelect,
   });
 
   final GlobalKey qrKey = GlobalKey(debugLabel: 'QR');
@@ -45,37 +57,67 @@ class _QRScannerScreenState extends State<QRScannerScreen> {
     super.dispose();
   }
 
+  // void _onQRViewCreated(QRViewController controller) {
+  //   setState(() {
+  //     _qrViewController = controller;
+  //   });
+  //   controller.scannedDataStream.listen((scanData) async {
+  //     if (_pattern.hasMatch(scanData.code!)) {
+  //       // Handle valid QR code
+  //       setState(() {
+  //         updateResult(scanData.code!);
+  //       });
+  //       _qrViewController?.pauseCamera();
+  //       print('QR Code found: ${scanData.code}');
+
+  //       var clientResponse = await Client().GetPump("48629922", scanData.code!);
+  //       if (clientResponse != null) {
+  //         var response = jsonDecode(clientResponse);
+  //         print(response);
+  //       } else {
+  //         print('Failed to fetch pump info');
+  //       }
+  //       // await Client().InitTrans(scanData.code!);
+  //     }
+  //   });
+  // }
   void _onQRViewCreated(QRViewController controller) {
     setState(() {
       _qrViewController = controller;
     });
-    controller.scannedDataStream.listen((scanData) {
+    controller.scannedDataStream.listen((scanData) async {
       if (_pattern.hasMatch(scanData.code!)) {
+        bool? hasVibrator = await Vibration.hasVibrator();
+        if (hasVibrator!) {
+          // Trigger vibration
+          Vibration.vibrate(duration: 300);
+        }
         // Handle valid QR code
         setState(() {
           updateResult(scanData.code!);
         });
         _qrViewController?.pauseCamera();
         print('QR Code found: ${scanData.code}');
-        InitTrans(upinin) async {
-          print("hello");
-          var uuin = "48629922";
-          var upin = upinin;
-          var amount = 10;
-          var response = await BaseClient()
-              .post('/system/init-transaction',
-                  '{"uuin": ${uuin}, "upin": ${upin}, "amount": ${amount}}')
-              .catchError((err) {
-            print(err);
-          });
-          if (response != null) {
-            print(response);
-            debugPrint(response);
-          }
-        }
 
-        ;
-        InitTrans(scanData.code!);
+        var clientResponse = await Client().GetPump("48629922", scanData.code!);
+        if (clientResponse != null) {
+          var response = jsonDecode(clientResponse);
+
+          var pump = response['pump'];
+          print(pump);
+          // Extract the values from the response
+          String pin = pump['pin'];
+          String ufsin = pump['ufsin'];
+          String status = pump['status'];
+          String? operator = pump['operator'];
+          String fuelType = pump['fuelType'];
+
+          initTransactionPageSelect(
+              pin, ufsin, status, '48629922', operator, fuelType);
+          // Navigate to the TransactionInit widget
+        } else {
+          print('Failed to fetch pump info');
+        }
       }
     });
   }

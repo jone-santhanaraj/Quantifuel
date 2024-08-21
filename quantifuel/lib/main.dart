@@ -7,6 +7,7 @@ import 'tabs/scanQRCode.dart';
 import 'tabs/wallet.dart';
 import 'tabs/transactions.dart';
 import 'tabs/profile.dart';
+import 'tabs/transactionInit.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -85,6 +86,32 @@ class _HomePageState extends State<HomePage> {
   late Key _qrScannerKey;
   late List<Widget> _widgetOptions;
 
+  var _pin = '';
+  var _ufsin = '';
+  var _status = '';
+  var _uuin = '';
+  var _operator = '';
+  var _fuelType = '';
+
+  void InitTransactionPageSelect(pin, ufsin, status, uuin, operator, fuelType) {
+    _pin = pin;
+    _ufsin = ufsin;
+    _status = status;
+    _uuin = uuin;
+    _operator = operator;
+    _fuelType = fuelType;
+    _widgetOptions[5] = TransactionInit(
+        pin: _pin,
+        ufsin: _ufsin,
+        status: _status,
+        uuin: _uuin,
+        operator: _operator,
+        fuelType: _fuelType);
+    setState(() {
+      _selectedIndex = 5;
+    });
+  }
+
   @override
   void initState() {
     super.initState();
@@ -94,11 +121,19 @@ class _HomePageState extends State<HomePage> {
           camera: camera,
           updateResult: updateResult,
           getResult: getResult,
+          initTransactionPageSelect: InitTransactionPageSelect,
           key: _qrScannerKey),
       Home(),
       Transactions(),
       Wallet(),
       Profile(),
+      TransactionInit(
+          pin: _pin,
+          ufsin: _ufsin,
+          status: _status,
+          uuin: _uuin,
+          operator: _operator,
+          fuelType: _fuelType),
       // Add more widgets here if needed for other tabs
     ];
   }
@@ -117,6 +152,7 @@ class _HomePageState extends State<HomePage> {
           camera: camera,
           updateResult: updateResult,
           getResult: getResult,
+          initTransactionPageSelect: InitTransactionPageSelect,
           key: _qrScannerKey);
       _selectedIndex =
           0; // Set the index for the QRScannerScreen or other widget
