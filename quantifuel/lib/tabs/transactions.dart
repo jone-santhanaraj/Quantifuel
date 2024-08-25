@@ -18,10 +18,14 @@ class _TransactionsState extends State<Transactions> {
             Text('TRANSACTIONS',
                 style: TextStyle(
                     fontSize: 30,
+                    fontFamily: 'SansationBold',
                     fontWeight: FontWeight.bold,
                     color: Colors.black)),
             Text('WELCOME TO QUANTIFUEL!',
-                style: TextStyle(fontSize: 20, color: Colors.black)),
+                style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'SansationLight',
+                    color: Colors.black)),
           ],
         ),
       ),

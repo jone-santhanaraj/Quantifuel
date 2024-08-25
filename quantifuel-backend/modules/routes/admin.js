@@ -134,7 +134,8 @@ admin.post('/create-pump', async (req, res) => {
         fuelStation.pumps.push(newPump._id);
         await fuelStation.save();
 
-        qrUrl = await generateQRCode(qrData, `${upin}`);
+        qrUrl = await generateQRCode(qrData);
+
         print.log(`QR Code generated for pump: ${qrUrl}`);
 
         try {

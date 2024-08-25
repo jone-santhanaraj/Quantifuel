@@ -154,20 +154,23 @@ const generateUniqueId = (type, uuin, upin) => {
 //   return UPIN;
 // };
 
-const generateQRCode = async (data, fileName) => {
+const generateQRCode = async (data) => {
   const qrCodesDir = path.join(__dirname, '../../public/qrcodes');
   if (!fs.existsSync(qrCodesDir)) {
     fs.mkdirSync(qrCodesDir);
   }
-  const qrCodePath = path.join(qrCodesDir, `${fileName}.png`);
+  const fName = `${data}.png`;
+  print.log(fName);
+  const qrCodePath = await path.join(qrCodesDir, fName);
+  const qrCodeUrl = `https://quantifuel-backend-qhfs4omr4a-el.a.run.app/${fName}`;
   try {
     await qr.toFile(qrCodePath, data);
     print.log(
-      `QR Code generated and saved at: ${qrCodesDir}/${fileName}.png for ${fileName}`
+      `QR Code generated and saved at: ${qrCodesDir}\\${fName} for ${data}`
     );
-    return qrCodePath;
+    return qrCodeUrl;
   } catch (err) {
-    print.error(`Error generating QR code for ${fileName} :`, err);
+    print.error(`Error generating QR code for ${data} :`, err);
     throw err; // rethrow the error after logging it
   }
 };

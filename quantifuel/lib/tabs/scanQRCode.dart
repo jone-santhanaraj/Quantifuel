@@ -103,17 +103,19 @@ class _QRScannerScreenState extends State<QRScannerScreen> {
         if (clientResponse != null) {
           var response = jsonDecode(clientResponse);
 
-          var pump = response['pump'];
+          var pump = response['pumpData'];
+          // var pump = jsonDecode(pumpEx);
           print(pump);
           // Extract the values from the response
           String pin = pump['pin'];
           String ufsin = pump['ufsin'];
           String status = pump['status'];
-          String? operator = pump['operator'];
+          String? operator = pump['operatorName'];
           String fuelType = pump['fuelType'];
+          String qrCodePath = pump['qrUrl'];
 
           initTransactionPageSelect(
-              pin, ufsin, status, '48629922', operator, fuelType);
+              pin, ufsin, status, '48629922', operator, fuelType, qrCodePath);
           // Navigate to the TransactionInit widget
         } else {
           print('Failed to fetch pump info');
@@ -141,7 +143,10 @@ class _QRScannerScreenState extends State<QRScannerScreen> {
             SizedBox(height: 20),
             Text(
               'Scan a Pump QR',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'SansationBold',
+                  fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 20),
             Container(
@@ -192,13 +197,13 @@ class _QRScannerScreenState extends State<QRScannerScreen> {
             SizedBox(height: 10),
             Text(
               'Place the QR Code within the above green box',
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(fontSize: 14, fontFamily: 'SansationLight'),
             ),
-            SizedBox(height: 20),
-            Text(
-              'Scan Result: ${getResult()}',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-            ),
+            // SizedBox(height: 20),
+            // Text(
+            //   'Scan Result: ${getResult()}',
+            //   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            // ),
           ],
         ),
       ),

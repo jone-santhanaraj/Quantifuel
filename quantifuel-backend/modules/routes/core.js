@@ -4,7 +4,7 @@
 
 const express = require('express');
 
-const Router = express.Router();
+const core = express.Router();
 
 const print = require('../utils/consoleUtils');
 const { generateUniqueId } = require('../utils/uniqueIdUtils');
@@ -13,7 +13,7 @@ const User = require('../models/User');
 const Pump = require('../models/Pump');
 const FuelStation = require('../models/FuelStation');
 
-Router.get('/getPump', async (req, res) => {
+core.get('/getPump', async (req, res) => {
   const { uuin, upin } = req.query;
   if (!upin) {
     print.log('Bad request - Pump ID required');
@@ -34,14 +34,38 @@ Router.get('/getPump', async (req, res) => {
       return res.status(404).json({ error: 'PUMP NOT FOUND' });
     }
     print.log(`pump info fetched by ${uuin} for ${upin}`);
-    res.status(200).json({ pump });
+    var operator = pump.operator._id.toString();
+    // print.log(operator);
+    var opsUser = await User.findOne({ _id: operator }, { name: 1 });
+    // print.log(opsUser.name);
+    pump.operatorName = opsUser.name;
+    // print.log(pump);
+    var pumpData = {
+      _id: pump._id,
+      upin: pump.upin,
+      ufsin: pump.ufsin,
+      pin: pump.pin,
+      fuelType: pump.fuelType,
+      status: pump.status,
+      currentTransaction: null,
+      fuelStation: pump.fuelStation,
+      operator: pump.operator,
+      operatorName: pump.operatorName,
+      createdAt: pump.createdAt,
+      updatedAt: pump.updatedAt,
+      __v: pump.__v,
+      qrUrl: pump.qrUrl,
+    };
+    // print.log(pumpData);
+
+    res.status(200).json({ pumpData });
   } catch (error) {
     print.error(error);
     res.status(500).json({ error: 'INTERNAL SERVER ERROR' });
   }
 });
 
-Router.post('/init-transaction', async (req, res) => {
+core.post('/init-transaction', async (req, res) => {
   const { uuin, upin, amount } = req.body;
   if (!uuin || !upin || !amount) {
     print.log('Bad request - UUIN, UPIN and amount required');
@@ -53,7 +77,7 @@ Router.post('/init-transaction', async (req, res) => {
   res.status(200).json({ utin });
 });
 
-Router.get('/getFuelStationName', async (req, res) => {
+core.get('/getFuelStationName', async (req, res) => {
   const { ufsin } = req.query;
 
   if (!ufsin) {
@@ -78,4 +102,4 @@ Router.get('/getFuelStationName', async (req, res) => {
   }
 });
 
-module.exports = Router;
+module.exports = core;

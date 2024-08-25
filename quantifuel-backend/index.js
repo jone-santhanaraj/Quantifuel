@@ -10,6 +10,11 @@ const qr = require('qrcode');
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+// var child_proces s = require('child_process');
+
+// child_process.execSync('npm install', { stdio: [0, 1, 2] });
+
+const serveIndex = require('serve-index'); //dev
 
 // REQUIRE LIBRARIES / END
 
@@ -33,21 +38,43 @@ const routes = require('./modules/routes');
 
 const PROTOCOL = process.env.PROTOCOL || 'http';
 const HOST = process.env.HOST || 'localhost';
-const PORT = process.env.PORT || 5344;
+const PORT = process.env.PORT || 8080;
 
 const allowedOrigins = process.env.ALLOWED_ORIGINS || 'http://localhost:5345';
 
 const logFileName = process.env.LOG_FILE_NAME;
 
-// VARIABLES AND ATTRIBUTES / START
+let MongodbState = 0;
+
+// VARIABLES AND ATTRIBUTES / END
 
 // MIDDLEWARES / START
 
 quantifuel.use(express.json());
 
-quantifuel.use(express.static(path.join(__dirname, './public')));
+quantifuel.use(
+  '/qrcodes',
+  express.static(path.join(__dirname, './public/qrcodes'))
+);
+
+quantifuel.use(
+  '/qrcodes',
+  serveIndex(path.join(__dirname, './public/qrcodes'), { icons: true })
+); //dev
 
 quantifuel.use(routes);
+
+const { publicKey, privateKey } = crypto.generateKeyPairSync('rsa', {
+  modulusLength: 2048,
+  publicKeyEncoding: {
+    type: 'pkcs1',
+    format: 'pem',
+  },
+  privateKeyEncoding: {
+    type: 'pkcs1',
+    format: 'pem',
+  },
+});
 
 // MIDDLEWARES / END
 
@@ -56,6 +83,40 @@ quantifuel.use(routes);
 quantifuel.get('/api', (req, res) => {
   print.log('someone accessed the server');
   res.send('Welcome to QuantiFuel!');
+});
+
+quantifuel.get('/api/test-get-pk', (req, res) => {
+  const { clientNonce } = req.query;
+  print.log('publicKey fetched: ', publicKey);
+  res
+    .status(200)
+    .json({ clientNonce, serverNonce: publicKey, statusCode: 200 });
+});
+quantifuel.get('/api/test-conn', (req, res) => {
+  if (MongodbState === 1) {
+    const { encryptedData } = req.query;
+    if (!encryptedData) {
+      res.status(400).json({ status: 'BAD REQUEST', statusCode: 400 });
+    }
+    try {
+      const clientNonce = crypto
+        .privateDecrypt(privateKey, Buffer.from(encryptedData, 'base64'))
+        .toString('utf8');
+
+      print.log('Decrypted Client Nonce:', clientNonce.toString());
+      res.status(200).json({
+        decryptedClientNonce: clientNonce.toString(),
+        statusCode: 200,
+      });
+    } catch (err) {
+      print.error('Error on connection test request: \n', err);
+      res
+        .status(500)
+        .json({ status: 'INTERNAL SERVER ERROR', statusCode: 500 });
+    }
+  } else {
+    res.status(500).json({ status: 'INTERNAL SERVER ERROR', statusCode: 500 });
+  }
 });
 
 quantifuel.get('/api/initTrans', (req, res) => {
@@ -78,22 +139,24 @@ quantifuel.get('/api/initTrans', (req, res) => {
 const startServer = async () => {
   consoleout.log('\x1b[32mInitiating...\x1b[0m');
   const mongodbConnectionResponse = await connectMongoose({
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+    // useNewUrlParser: true,
+    // useUnifiedTopology: true,
   });
   if (mongodbConnectionResponse.status === 200) {
     consoleout.success(
       '\x1b[35mServer is \x1b[32mup \x1b[35mand \x1b[32mrunning\x1b[35m, listening at',
       `\x1b[34m${PROTOCOL}://${HOST}:${PORT}/\x1b[0m`
     );
+    MongodbState = 1;
   } else if (mongodbConnectionResponse.status === 500) {
     consoleout.failed(
       `\x1b[35mServer is running at: \x1b[34m${PROTOCOL}://${HOST}:${PORT}/\x1b[31m but not ready to accept requests\x1b[0m`
     );
+    MongodbState = 0;
   }
 };
 
-const server = quantifuel.listen(PORT, HOST, startServer);
+const server = quantifuel.listen(PORT, startServer);
 
 const clearLogFile = () => {
   if (logFileName) {
@@ -121,6 +184,7 @@ const clearLogFile = () => {
 
 const shutdownServer = async () => {
   await setTimeout(async () => {
+    MongodbState = 0;
     await server.close(() => {
       consoleout.log(
         `\x1b[31mServer listening at \x1b[34m${PROTOCOL}://${HOST}:${PORT}/\x1b[31m has been stopped on command.\x1b[0m`
