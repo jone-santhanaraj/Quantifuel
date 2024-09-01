@@ -5,11 +5,16 @@
 // REQUIRE LIBRARIES / START
 
 const express = require('express');
+const http = require('http');
 const dotenv = require('dotenv');
+const cors = require('cors');
 const qr = require('qrcode');
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const socketIo = require('socket.io');
+const ioClient = require('socket.io-client');
+
 // var child_proces s = require('child_process');
 
 // child_process.execSync('npm install', { stdio: [0, 1, 2] });
@@ -22,6 +27,10 @@ const serveIndex = require('serve-index'); //dev
 
 const quantifuel = express();
 dotenv.config();
+const server = http.createServer(quantifuel);
+const io = socketIo(server);
+
+const pumpSocket = ioClient('http://localhost:8081');
 
 // LIBRARY CONFIG / END
 
@@ -31,6 +40,12 @@ const print = require('./modules/utils/consoleUtils');
 const { mongodb, connectMongoose } = require('./modules/config/mongoose');
 
 const routes = require('./modules/routes');
+
+const {
+  fetchFuelPrices,
+  getFuelPrices,
+  fuelPrices,
+} = require('./modules/utils/fuelPrices');
 
 // REQUIRE MODULES / END
 
@@ -49,6 +64,28 @@ let MongodbState = 0;
 // VARIABLES AND ATTRIBUTES / END
 
 // MIDDLEWARES / START
+
+quantifuel.use(
+  cors({
+    origin: allowedOrigins.split(','),
+  })
+);
+
+pumpSocket.on('pumpData', (data) => {
+  print.log('Received data from PumpServer:', data);
+  // Broadcast data to all connected clients
+  io.emit('updatePumpData', data);
+});
+
+//Handle client connections
+io.on('connection', (socket) => {
+  print.log('Client connected:', socket.id);
+
+  // Handle client disconnection
+  socket.on('disconnect', () => {
+    print.log('Client disconnected:', socket.id);
+  });
+});
 
 quantifuel.use(express.json());
 
@@ -137,26 +174,29 @@ quantifuel.get('/api/initTrans', (req, res) => {
 // SERVER CONFIG / START
 
 const startServer = async () => {
-  consoleout.log('\x1b[32mInitiating...\x1b[0m');
+  print.log('Initiating...');
   const mongodbConnectionResponse = await connectMongoose({
     // useNewUrlParser: true,
     // useUnifiedTopology: true,
   });
   if (mongodbConnectionResponse.status === 200) {
-    consoleout.success(
-      '\x1b[35mServer is \x1b[32mup \x1b[35mand \x1b[32mrunning\x1b[35m, listening at',
-      `\x1b[34m${PROTOCOL}://${HOST}:${PORT}/\x1b[0m`
+    print.success(
+      'Server is up and running, listening at',
+      `${PROTOCOL}://${HOST}:${PORT}/`
     );
     MongodbState = 1;
   } else if (mongodbConnectionResponse.status === 500) {
-    consoleout.failed(
-      `\x1b[35mServer is running at: \x1b[34m${PROTOCOL}://${HOST}:${PORT}/\x1b[31m but not ready to accept requests\x1b[0m`
+    print.failed(
+      `Server is running at: ${PROTOCOL}://${HOST}:${PORT}/ but not ready to accept requests`
     );
     MongodbState = 0;
   }
+  // fetchFuelPrices();
+  // getFuelPrices();
+  // print.log(fuelPrices);
 };
 
-const server = quantifuel.listen(PORT, startServer);
+const serve = server.listen(PORT, HOST, startServer);
 
 const clearLogFile = () => {
   if (logFileName) {
@@ -164,13 +204,13 @@ const clearLogFile = () => {
 
     fs.readFile(logFilePath, 'utf8', (err) => {
       if (err) {
-        consoleout.error('Error reading the log file:', err);
+        print.error('Error reading the log file:', err);
       } else {
         fs.truncate(logFilePath, 0, (truncateErr) => {
           if (truncateErr) {
-            consoleout.error('Error clearing the log file:', truncateErr);
+            print.error('Error clearing the log file:', truncateErr);
           } else {
-            consoleout.info(
+            print.info(
               `Log file "${logFileName}" has been cleared successfully.`
             );
           }
@@ -178,16 +218,16 @@ const clearLogFile = () => {
       }
     });
   } else {
-    consoleout.warn('Log file name is not set.');
+    print.warn('Log file name is not set.');
   }
 };
 
 const shutdownServer = async () => {
   await setTimeout(async () => {
     MongodbState = 0;
-    await server.close(() => {
-      consoleout.log(
-        `\x1b[31mServer listening at \x1b[34m${PROTOCOL}://${HOST}:${PORT}/\x1b[31m has been stopped on command.\x1b[0m`
+    await serve.close(() => {
+      print.log(
+        `Server listening at ${PROTOCOL}://${HOST}:${PORT}/ has been stopped on command.`
       );
     });
   }, 1000);
@@ -198,19 +238,17 @@ const shutdownServer = async () => {
 
 const restartServer = async () => {
   await setTimeout(async () => {
-    await server.close(() => {
-      consoleout.log(
-        `\x1b[31mServer listened at \x1b[34m${PROTOCOL}://${HOST}:${PORT}/\x1b[31m has been stopped for a restart.\x1b[0m`
+    await serve.close(() => {
+      print.log(
+        `Server listened at ${PROTOCOL}://${HOST}:${PORT}/ has been stopped for a restart.`
       );
     });
   }, 1000);
   setTimeout(() => {
-    consoleout.log(
-      '\x1b[33mAttempting to start the server again after restart...\x1b[0m'
-    );
+    print.log('Attempting to start the server again after restart...');
   }, 1500);
   setTimeout(async () => {
-    await server.listen(PORT, HOST, startServer);
+    await serve.listen(PORT, HOST, startServer);
   }, 3000);
 };
 
@@ -218,17 +256,15 @@ const processConsoleCommand = (command) => {
   if (command === 'clearlog') {
     clearLogFile();
   } else if (command === 'stop') {
-    consoleout.log('\x1b[31mStopping server...\x1b[0m');
+    print.log('Stopping server...');
     shutdownServer();
   } else if (command === 'restart') {
-    consoleout.log('\x1b[31mRestarting server...\x1b[0m');
+    print.log('Restarting server...');
     restartServer();
   } else if (command === '') {
-    consoleout.info('\x1b[31m-\x1b[0m');
+    print.info('-');
   } else {
-    consoleout.warn(
-      `\x1b[31mUnable to recognize the command: "\x1b[0m${command}\x1b[31m"\x1b[0m`
-    );
+    print.warn(`Unable to recognize the command: "${command}"`);
   }
 };
 

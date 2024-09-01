@@ -7,6 +7,7 @@ const Schema = mongoose.Schema;
 
 const TransactionSchema = new Schema(
   {
+    utin: { type: String, required: true, unique: true },
     user: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     pump: { type: Schema.Types.ObjectId, ref: 'Pump', required: true },
     fuelStation: {
@@ -15,7 +16,13 @@ const TransactionSchema = new Schema(
       required: true,
     },
     operator: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-    fuelAmount: { type: Number, required: true }, // in liters or rupees
+    fuelType: {
+      type: String,
+      enum: ['Petrol', 'Diesel'],
+      required: true,
+    },
+    fuelQuantityInLitre: { type: Number, required: true },
+    pricePerLitre: { type: Number, required: true }, // in liters or rupees
     amountPaid: { type: Number, default: 0 }, // in rupees
     paymentMethod: {
       type: String,
@@ -26,7 +33,9 @@ const TransactionSchema = new Schema(
       type: String,
       enum: ['initiated', 'in-process', 'completed', 'cancelled'],
       default: 'initiated',
+      required: true,
     },
+    progress: { type: Number, default: 0 }, // in
     invoice: { type: String }, // URL or path to the e-invoice
   },
   { timestamps: true }

@@ -1,6 +1,6 @@
 import 'package:http/http.dart' as http;
 
-// const baseUri = 'http://172.20.10.5:5344';
+// const baseUri = 'http://172.20.10.5:8080';
 const baseUri = 'https://quantifuel-backend-qhfs4omr4a-el.a.run.app';
 
 class BaseClient {

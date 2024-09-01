@@ -1,3 +1,4 @@
+import 'package:Quantifuel/tabs/transactionTracking.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 
@@ -100,6 +101,11 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   var _fuelType = '';
   var _qrCodePath = '';
 
+  var _fuelQuantityRequestedInLitre = 0.0;
+  var _pricePerLitre = 0.0;
+  var _utin = "48629922-15b7e9-6f8c-54d8621e";
+  var _FuelType = "Petrol";
+
   bool _isKeyboardVisible = false;
 
   void InitTransactionPageSelect(
@@ -118,9 +124,28 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
         uuin: _uuin,
         operator: _operator,
         fuelType: _fuelType,
-        qrCodePath: _qrCodePath);
+        qrCodePath: _qrCodePath,
+        ProcessTransactionPageSelect: ProcessTransactionPageSelect);
     setState(() {
       _selectedIndex = 5;
+    });
+  }
+
+  void ProcessTransactionPageSelect(
+      utin, fuelQuantityRequestedInLitre, pricePerLitre, fuelType) {
+    _utin = utin;
+    _fuelQuantityRequestedInLitre = fuelQuantityRequestedInLitre;
+    _pricePerLitre = pricePerLitre;
+    _FuelType = fuelType;
+
+    _widgetOptions[6] = TransactionTracking(
+      FuelQuantityRequestedInLitres: _fuelQuantityRequestedInLitre,
+      PricePerLitre: _pricePerLitre,
+      UTIN: _utin,
+      FuelType: _FuelType,
+    );
+    setState(() {
+      _selectedIndex = 6;
     });
   }
 
@@ -148,8 +173,14 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
           uuin: _uuin,
           operator: _operator,
           fuelType: _fuelType,
-          qrCodePath: _qrCodePath),
-      FuelAmountInputField()
+          qrCodePath: _qrCodePath,
+          ProcessTransactionPageSelect: ProcessTransactionPageSelect),
+      TransactionTracking(
+        FuelQuantityRequestedInLitres: _fuelQuantityRequestedInLitre,
+        PricePerLitre: _pricePerLitre,
+        UTIN: _utin,
+        FuelType: _FuelType,
+      ),
       // Add more widgets here if needed for other tabs
     ];
   }

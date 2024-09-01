@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/foundation.dart';
 import 'baseClient.dart';
 import 'dart:convert';
@@ -63,11 +65,36 @@ class Client {
     }
   }
 
-  Future<dynamic> InitTrans(upinin) async {
-    var uuin = "48629922";
-    var upin = upinin;
-    var amount = 10;
-    var body = jsonEncode({"uuin": uuin, "upin": upin, "amount": amount});
+  Future<dynamic> GetPricePerLitre(String fuelType) async {
+    var params = {
+      "fuelType": fuelType,
+    };
+    var response = await BaseClient()
+        .get('/system/getPricePerLitre', params)
+        .catchError((err) {
+      print(err);
+    });
+
+    if (response != null) {
+      // print(response);
+      // debugPrint(response);
+      return response;
+    } else {
+      print('Failed to fetch price per litre info');
+      debugPrint('Failed to fetch price per litre info');
+      return null;
+    }
+  }
+
+  Future<dynamic> InitTransaction(
+      uuin, upin, fuelQuantityInLitres, pricePerLitre, fuelType) async {
+    var body = jsonEncode({
+      "uuin": uuin,
+      "upin": upin,
+      "fuelQuantityInLitres": fuelQuantityInLitres,
+      "pricePerLitre": pricePerLitre,
+      "fuelType": fuelType
+    });
     var response = await BaseClient()
         .post('/system/init-transaction', body)
         .catchError((err) {
@@ -76,10 +103,10 @@ class Client {
     if (response != null) {
       print(response);
       debugPrint(response);
-      return response;
+      return jsonDecode(response);
     } else {
-      print('Failed to post data');
-      debugPrint('Failed to post data');
+      print('Failed to post transaction data');
+      debugPrint('Failed to post transaction data');
       return null;
     }
   }

@@ -15,6 +15,7 @@ class TransactionInit extends StatefulWidget {
   final String operator;
   final String fuelType;
   final String qrCodePath;
+  final Function ProcessTransactionPageSelect;
 
   TransactionInit(
       {required this.pin,
@@ -23,7 +24,8 @@ class TransactionInit extends StatefulWidget {
       required this.uuin,
       required this.operator,
       required this.fuelType,
-      required this.qrCodePath});
+      required this.qrCodePath,
+      required this.ProcessTransactionPageSelect});
 
   @override
   _TransactionInitState createState() => _TransactionInitState(
@@ -33,7 +35,8 @@ class TransactionInit extends StatefulWidget {
       uuin: uuin,
       operator: operator,
       fuelType: fuelType,
-      qrCodePath: qrCodePath);
+      qrCodePath: qrCodePath,
+      ProcessTransactionPageSelect: ProcessTransactionPageSelect);
 }
 
 class _TransactionInitState extends State<TransactionInit>
@@ -45,6 +48,7 @@ class _TransactionInitState extends State<TransactionInit>
   final String operator;
   final String fuelType;
   final String qrCodePath;
+  final Function ProcessTransactionPageSelect;
 
   _TransactionInitState(
       {required this.pin,
@@ -53,10 +57,19 @@ class _TransactionInitState extends State<TransactionInit>
       required this.uuin,
       required this.operator,
       required this.fuelType,
-      required this.qrCodePath});
+      required this.qrCodePath,
+      required this.ProcessTransactionPageSelect});
 
   bool _isKeyboardVisible = false;
   Timer? _inactiveTimer;
+
+  String? _typedValue;
+
+  void _onChanged(String value) {
+    setState(() {
+      _typedValue = value;
+    });
+  }
 
   @override
   void initState() {
@@ -86,8 +99,59 @@ class _TransactionInitState extends State<TransactionInit>
     return stationName;
   }
 
-  void InitTrans(pin, ufsin, uuin) {
-    print("Init Trans Pressed");
+  int hardLimitOnMaxPay = 200000;
+
+  String _selectedInputType = 'L'; // Default selection
+
+  void _onInputTypeChanged(String newInputType) {
+    setState(() {
+      _selectedInputType = newInputType;
+    }); // You can use this value as needed
+  }
+
+  void InitTrans(pin, ufsin, uuin) async {
+    FocusScope.of(context).unfocus();
+    print(
+        "Init Trans Pressed \nEntered Value: $_typedValue \nPIN: $pin \nUFSIN: $ufsin \nUUIN: $uuin");
+
+    var res = await Client().GetPricePerLitre(fuelType);
+    var fuel = jsonDecode(res);
+    // print('${fuel} \n ${double.parse(fuel.pricePerLitre.toString())}');
+    print(fuel['pricePerLitre']);
+
+    var pricePerLitre;
+    if (fuel != null && fuel['pricePerLitre'] != null) {
+      pricePerLitre = double.parse(fuel['pricePerLitre'].toString());
+      pricePerLitre = double.parse(pricePerLitre.toStringAsFixed(2));
+    } else {
+      print('Failed to get price per litre data - client');
+      debugPrint('Failed to get price per litre data - client');
+    }
+    var fuelQuantityInLitre;
+
+    if (_selectedInputType == 'L') {
+      fuelQuantityInLitre = double.parse(_typedValue.toString());
+      fuelQuantityInLitre = double.parse(fuelQuantityInLitre
+          .toStringAsFixed(2)); // Get the fuel quantity in litres
+    } else if (_selectedInputType == '₹') {
+      fuelQuantityInLitre = double.parse(
+          (double.parse(_typedValue!) / pricePerLitre)
+              .toStringAsFixed(2)); // Calculate the fuel quantity in litres
+    } else {
+      fuelQuantityInLitre = hardLimitOnMaxPay % pricePerLitre;
+    }
+    var response = await Client().InitTransaction(
+        uuin, '$ufsin-$pin', fuelQuantityInLitre, pricePerLitre, fuelType);
+    if (response != null) {
+      var UTIN = response['utin'];
+      var FuelType = response['fuelType'];
+
+      ProcessTransactionPageSelect(
+          UTIN, fuelQuantityInLitre, pricePerLitre, FuelType);
+    } else {
+      print('Failed to post transaction data - client');
+      debugPrint('Failed to post transaction data - client');
+    }
   }
 
   void _startInactivityTimer() {
@@ -243,7 +307,10 @@ class _TransactionInitState extends State<TransactionInit>
                       Container(
                         width: screenWidth *
                             0.9, // Adjust the width of the TextField
-                        child: FuelAmountInputField(),
+                        child: FuelAmountInputField(
+                          onChanged: _onChanged,
+                          onInputTypeChanged: _onInputTypeChanged,
+                        ),
                         // child: TextField(
                         //   cursorColor: AppColors.appBarBottomRed,
                         //   decoration: InputDecoration(
