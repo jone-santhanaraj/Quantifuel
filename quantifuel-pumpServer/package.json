@@ -1,6 +1,6 @@
 {
   "name": "quantifuel-pump",
-  "version": "0.00.1240",
+  "version": "0.00.1241",
   "description": "Automated Fuel Dispensing and Fuel Station Management",
   "main": "pump.js",
   "scripts": {

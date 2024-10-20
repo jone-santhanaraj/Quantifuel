@@ -1,6 +1,6 @@
 {
   "name": "quantifuel-admin",
-  "version": "0.00.1240",
+  "version": "0.00.1241",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
