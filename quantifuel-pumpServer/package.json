@@ -1,6 +1,6 @@
 {
   "name": "quantifuel-pump",
-  "version": "0.00.1220",
+  "version": "0.00.1240",
   "description": "Automated Fuel Dispensing and Fuel Station Management",
   "main": "pump.js",
   "scripts": {
@@ -24,7 +24,7 @@
     "qrcode": "^1.5.3",
     "serve-index": "^1.9.1",
     "socket.io": "^4.7.5",
-    "onoff": "^6.0.0"
+    "pigpio": "^3.3.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"

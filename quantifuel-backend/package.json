@@ -1,6 +1,6 @@
 {
   "name": "quantifuel",
-  "version": "0.00.1220",
+  "version": "0.00.1240",
   "description": "Automated Fuel Dispensing and Fuel Station Management",
   "main": "index.js",
   "scripts": {

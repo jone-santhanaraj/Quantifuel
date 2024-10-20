@@ -25,7 +25,7 @@ const connectMongoose = async (params) => {
       );
       await mongoose.connect(
         // `mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_DATABASE}?authMechanism=${MONGODB_AUTHMECHANISM}&authSource=${MONGODB_AUTHSOURCE}`,
-        `mongodb+srv://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@${MONGODB_HOST}/?retryWrites=true&w=majority&appName=Quantifuel-backend`,
+        `mongodb+srv://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@${MONGODB_HOST}/${MONGODB_DATABASE}?retryWrites=true&w=majority&appName=quantifuel`,
         params
       );
       // await mongoose.connect(

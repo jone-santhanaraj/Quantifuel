@@ -1,0 +1,110 @@
+/* FuelPumpManagement.css */
+.fuel-pump-management-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.fuel-pump-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.fuel-pump-header h2 {
+  font-size: 24px;
+  color: #007bff;
+}
+
+.add-pump-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-pump-button:hover {
+  background-color: #0056b3;
+}
+
+.fuel-pump-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.fuel-pump-table th,
+.fuel-pump-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.fuel-pump-table th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 500;
+}
+
+.fuel-pump-table td {
+  color: #555;
+}
+
+.fuel-pump-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.edit-button,
+.delete-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.edit-button:hover {
+  color: #0056b3;
+}
+
+.delete-button {
+  color: #ff0000;
+}
+
+.delete-button:hover {
+  color: #cc0000;
+}
+
+@media (max-width: 768px) {
+  .fuel-pump-table,
+  .fuel-pump-table th,
+  .fuel-pump-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .fuel-pump-table th,
+  .fuel-pump-table td {
+    padding: 10px;
+    text-align: right;
+  }
+
+  .fuel-pump-table th::after,
+  .fuel-pump-table td::after {
+    content: ':';
+    float: left;
+    font-weight: bold;
+  }
+
+  .add-pump-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

@@ -7,7 +7,7 @@ const dotenv = require('dotenv');
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
-const Gpio = require('onoff').Gpio;
+const { Gpio } = require('pigpio');  // Use pigpio instead of onoff
 
 const pump = express();
 dotenv.config();
@@ -39,18 +39,20 @@ pumpIO.on('connection', (socket) => {
   });
 });
 
+// Use pigpio to control GPIO 4
+const gpio4 = new Gpio(4, { mode: Gpio.OUTPUT });
+
 const startServer = async () => {
   consoleout.log('Initiating...');
-  const mongodbConnectionResponse = await connectMongoose({
-    // useNewUrlParser: true,
-    // useUnifiedTopology: true,
-  });
+  const mongodbConnectionResponse = await connectMongoose({});
   if (mongodbConnectionResponse.status === 200) {
     consoleout.success(
       'Pump is up and running, listening at',
       `${PROTOCOL}://${HOST}:${PORT}/`
     );
     MongodbState = 1;
+
+    gpio4.digitalWrite(1);  // Turn on GPIO 4 using pigpio
   } else if (mongodbConnectionResponse.status === 500) {
     consoleout.failed(
       `Pump is running at: ${PROTOCOL}://${HOST}:${PORT}/ but not ready to accept requests`
@@ -91,6 +93,8 @@ const clearLogFile = () => {
 const shutdownServer = async () => {
   await setTimeout(async () => {
     MongodbState = 0;
+    gpio4.digitalWrite(0);  // Turn off GPIO 4 using pigpio
+    gpio4.mode(Gpio.INPUT);  // Reset GPIO pin to input mode
     await server.close(() => {
       consoleout.log(
         `Pump listening at ${PROTOCOL}://${HOST}:${PORT}/ has been stopped on command.`

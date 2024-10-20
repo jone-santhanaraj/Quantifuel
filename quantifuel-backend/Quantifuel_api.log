@@ -4783,3 +4783,445 @@ B38Fk7C9DILfzm2TcHjIVpeE//299WTQIQIDAQAB
 
 [Quantifuel] [02/09/2024-01:43:50:251~GMT+05:30] [log] Server listening at http://0.0.0.0:8080/ has been stopped on command.
 
+[Quantifuel] [04/09/2024-20:58:50:115~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [04/09/2024-20:58:50:165~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel-backend.ehads.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [04/09/2024-20:58:50:930~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [04/09/2024-20:58:50:932~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
+[Quantifuel] [04/09/2024-21:00:39:393~GMT+05:30] [log] publicKey fetched:  -----BEGIN RSA PUBLIC KEY-----
+MIIBCgKCAQEAxqt7TgA9KM3+DhToOJf0an6g7GS8Cr70ogeqz/piqZI+f/GOIwoK
+wa+iVgQ15w65iv/UfdeREpDgoCNUu7XkeFaVMhlBvRFvz5K+KvgbunITcNliq4od
+OfIFgjpXjpVfAeUoHmQND7CU2TDcD4ETj/2OA1X5JzwqOjuTuQqRf12oz7/r/U2U
+jcwLVzJq6DTyG8uAogxpyawTTjdh7WwiADD2mRc1+Fhp8CoRN8Bg8YlIdnl6RaJd
+2LijfHRpTvEWrZbMgrihuOMUUlO6dcTQTK77SHCPU4OY+nY627Kj9nLFpTmbuggh
+RoIRXL3Pzey4tjCvksJMEJ7Ji7JPuSICSwIDAQAB
+-----END RSA PUBLIC KEY-----
+
+
+[Quantifuel] [04/09/2024-21:00:59:803~GMT+05:30] [log] publicKey fetched:  -----BEGIN RSA PUBLIC KEY-----
+MIIBCgKCAQEAxqt7TgA9KM3+DhToOJf0an6g7GS8Cr70ogeqz/piqZI+f/GOIwoK
+wa+iVgQ15w65iv/UfdeREpDgoCNUu7XkeFaVMhlBvRFvz5K+KvgbunITcNliq4od
+OfIFgjpXjpVfAeUoHmQND7CU2TDcD4ETj/2OA1X5JzwqOjuTuQqRf12oz7/r/U2U
+jcwLVzJq6DTyG8uAogxpyawTTjdh7WwiADD2mRc1+Fhp8CoRN8Bg8YlIdnl6RaJd
+2LijfHRpTvEWrZbMgrihuOMUUlO6dcTQTK77SHCPU4OY+nY627Kj9nLFpTmbuggh
+RoIRXL3Pzey4tjCvksJMEJ7Ji7JPuSICSwIDAQAB
+-----END RSA PUBLIC KEY-----
+
+
+[Quantifuel] [04/09/2024-21:01:25:189~GMT+05:30] [log] pump info fetched by 48629922 for 15b7e9-6f8c
+
+[Quantifuel] [04/09/2024-21:01:26:452~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [04/09/2024-21:02:58:697~GMT+05:30] [log] publicKey fetched:  -----BEGIN RSA PUBLIC KEY-----
+MIIBCgKCAQEAxqt7TgA9KM3+DhToOJf0an6g7GS8Cr70ogeqz/piqZI+f/GOIwoK
+wa+iVgQ15w65iv/UfdeREpDgoCNUu7XkeFaVMhlBvRFvz5K+KvgbunITcNliq4od
+OfIFgjpXjpVfAeUoHmQND7CU2TDcD4ETj/2OA1X5JzwqOjuTuQqRf12oz7/r/U2U
+jcwLVzJq6DTyG8uAogxpyawTTjdh7WwiADD2mRc1+Fhp8CoRN8Bg8YlIdnl6RaJd
+2LijfHRpTvEWrZbMgrihuOMUUlO6dcTQTK77SHCPU4OY+nY627Kj9nLFpTmbuggh
+RoIRXL3Pzey4tjCvksJMEJ7Ji7JPuSICSwIDAQAB
+-----END RSA PUBLIC KEY-----
+
+
+[Quantifuel] [04/09/2024-21:03:05:277~GMT+05:30] [log] pump info fetched by 48629922 for 15b7e9-6f8c
+
+[Quantifuel] [04/09/2024-21:03:06:156~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [04/09/2024-21:03:23:346~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [04/09/2024-21:03:24:882~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [04/09/2024-21:03:26:993~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [04/09/2024-21:03:27:069~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [04/09/2024-21:03:27:133~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [04/09/2024-21:03:27:317~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [04/09/2024-21:03:27:456~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [04/09/2024-21:03:27:491~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [04/09/2024-21:03:27:912~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [04/09/2024-21:03:28:167~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [04/09/2024-21:03:28:751~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [04/09/2024-21:03:29:389~GMT+05:30] [log] Price per litre fetched for petrol: 111.3
+
+[Quantifuel] [04/09/2024-21:03:29:514~GMT+05:30] [log] Generated new UTIN: 48629922-15b7e9-6f8c-d540d7a4
+
+[Quantifuel] [04/09/2024-21:03:29:517~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [04/09/2024-21:03:29:551~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [04/09/2024-21:03:29:605~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [04/09/2024-21:03:29:702~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [04/09/2024-21:03:29:823~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [04/09/2024-21:03:29:839~GMT+05:30] [log] Transaction initiated for 48629922-15b7e9-6f8c-d540d7a4
+
+[Quantifuel] [04/09/2024-21:03:29:878~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [07/09/2024-17:15:18:717~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [07/09/2024-17:15:18:910~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel-backend.ehads.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [07/09/2024-17:15:20:162~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [07/09/2024-17:15:20:168~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
+[Quantifuel] [07/09/2024-21:24:22:165~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [07/09/2024-21:24:22:191~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel-backend.ehads.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [07/09/2024-21:24:24:146~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [07/09/2024-21:24:24:148~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
+[Quantifuel] [07/09/2024-22:28:02:997~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [07/09/2024-22:28:03:052~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel.krjjb5w.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [07/09/2024-22:28:04:410~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [07/09/2024-22:28:04:412~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
+[Quantifuel] [07/09/2024-22:34:02:232~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [07/09/2024-22:34:02:261~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel.krjjb5w.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [07/09/2024-22:34:02:263~GMT+05:30] [failure] 500 - INTERNAL SERVER ERROR > An error occurred while trying to connect DB: {}
+
+[Quantifuel] [07/09/2024-22:34:02:267~GMT+05:30] [failure] Server is running at: http://0.0.0.0:8080/ but not ready to accept requests
+
+[Quantifuel] [07/09/2024-22:34:05:095~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [07/09/2024-22:34:05:121~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel.krjjb5w.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [07/09/2024-22:34:06:858~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [07/09/2024-22:34:06:859~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
+[Quantifuel] [07/09/2024-22:34:28:059~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [07/09/2024-22:34:28:085~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel.krjjb5w.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [07/09/2024-22:34:29:160~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [07/09/2024-22:34:29:161~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
+[Quantifuel] [07/09/2024-22:35:38:274~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [07/09/2024-22:35:38:333~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel.krjjb5w.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [07/09/2024-22:35:39:839~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [07/09/2024-22:35:39:840~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
+[Quantifuel] [07/09/2024-22:37:58:560~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [07/09/2024-22:37:58:617~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel.krjjb5w.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [07/09/2024-22:38:00:057~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [07/09/2024-22:38:00:059~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
+[Quantifuel] [07/09/2024-22:38:05:192~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [07/09/2024-22:38:05:220~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel.krjjb5w.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [07/09/2024-22:38:07:249~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [07/09/2024-22:38:07:280~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel.krjjb5w.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [07/09/2024-22:38:08:362~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [07/09/2024-22:38:08:364~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
+[Quantifuel] [07/09/2024-22:38:31:342~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [07/09/2024-22:38:31:419~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel.krjjb5w.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [07/09/2024-22:38:32:505~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [07/09/2024-22:38:32:510~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
+[Quantifuel] [07/09/2024-22:38:42:592~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [07/09/2024-22:38:42:621~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel.krjjb5w.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [07/09/2024-22:38:43:770~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [07/09/2024-22:38:43:771~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
+[Quantifuel] [07/09/2024-23:15:22:107~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [07/09/2024-23:15:22:212~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel.krjjb5w.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [07/09/2024-23:15:24:822~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [07/09/2024-23:15:24:826~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
+[Quantifuel] [07/09/2024-23:23:43:303~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [07/09/2024-23:23:43:326~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel.krjjb5w.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [07/09/2024-23:23:43:839~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [07/09/2024-23:23:43:842~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
+[Quantifuel] [09/09/2024-01:42:56:310~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [09/09/2024-01:42:56:419~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel.krjjb5w.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [09/09/2024-01:42:57:403~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [09/09/2024-01:42:57:405~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
+[Quantifuel] [09/09/2024-01:55:02:297~GMT+05:30] [log] Stopping server...
+
+[Quantifuel] [09/09/2024-01:55:03:327~GMT+05:30] [log] Server listening at http://0.0.0.0:8080/ has been stopped on command.
+
+[Quantifuel] [09/09/2024-12:27:45:668~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [09/09/2024-12:27:45:780~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel.krjjb5w.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [09/09/2024-12:27:46:676~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [09/09/2024-12:27:46:679~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
+[Quantifuel] [09/09/2024-12:29:29:170~GMT+05:30] [log] publicKey fetched:  -----BEGIN RSA PUBLIC KEY-----
+MIIBCgKCAQEAubdF3sdXmBuq557uuVa4eqO+QYIERdzW7LdOUzLmmE1TvEGjBDWX
+oEO9WPRVQIw8vbKIvcwAJXHN8rFc5CrSiCwrNewQ2j0OXydUeykXr0vAUakOfqaZ
+3YW3w5y0IPI0qQITcMXKs8G2xerwUvdeo9y220ZzEFk3B2UlczMUVdhf9tWLgUug
+Ga0mAbAlxnQTUWZXz391HBQSjSTmoUxiGUPwKynZ6THkFljLvTPQIoE9vEzUCNuj
+G2rQXZO6UVRp9SsK1rwR8CIyqrieUKezXaLItdVFnHRX5lhV6+kgUkjUOAuUqB5H
+FN0i+dBu9OXYl7fcuDpb/l1Mq235R7q5LwIDAQAB
+-----END RSA PUBLIC KEY-----
+
+
+[Quantifuel] [09/09/2024-12:31:57:445~GMT+05:30] [log] publicKey fetched:  -----BEGIN RSA PUBLIC KEY-----
+MIIBCgKCAQEAubdF3sdXmBuq557uuVa4eqO+QYIERdzW7LdOUzLmmE1TvEGjBDWX
+oEO9WPRVQIw8vbKIvcwAJXHN8rFc5CrSiCwrNewQ2j0OXydUeykXr0vAUakOfqaZ
+3YW3w5y0IPI0qQITcMXKs8G2xerwUvdeo9y220ZzEFk3B2UlczMUVdhf9tWLgUug
+Ga0mAbAlxnQTUWZXz391HBQSjSTmoUxiGUPwKynZ6THkFljLvTPQIoE9vEzUCNuj
+G2rQXZO6UVRp9SsK1rwR8CIyqrieUKezXaLItdVFnHRX5lhV6+kgUkjUOAuUqB5H
+FN0i+dBu9OXYl7fcuDpb/l1Mq235R7q5LwIDAQAB
+-----END RSA PUBLIC KEY-----
+
+
+[Quantifuel] [09/09/2024-12:33:22:509~GMT+05:30] [log] pump info fetched by 48629922 for 15b7e9-6f8c
+
+[Quantifuel] [09/09/2024-12:33:23:187~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-12:36:47:628~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-12:36:47:631~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-12:40:24:786~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-12:40:25:778~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-12:40:25:812~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-12:41:10:722~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-12:41:13:287~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-12:41:13:318~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-12:41:14:070~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-12:41:14:084~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-12:41:15:676~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-12:41:17:668~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-12:41:17:680~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-12:41:18:715~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-12:42:09:785~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-12:42:09:794~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-12:42:10:658~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-12:42:10:715~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-12:42:12:117~GMT+05:30] [log] Fuel station name fetched for UFSIN: 15b7e9
+
+[Quantifuel] [09/09/2024-18:22:21:166~GMT+05:30] [log] Restarting server...
+
+[Quantifuel] [09/09/2024-18:22:22:193~GMT+05:30] [log] Server listened at http://0.0.0.0:8080/ has been stopped for a restart.
+
+[Quantifuel] [09/09/2024-18:22:22:686~GMT+05:30] [log] Attempting to start the server again after restart...
+
+[Quantifuel] [09/09/2024-18:22:24:184~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [09/09/2024-18:22:24:186~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel.krjjb5w.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [09/09/2024-18:22:24:191~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [09/09/2024-18:22:24:192~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
+[Quantifuel] [09/09/2024-18:23:31:841~GMT+05:30] [log] publicKey fetched:  -----BEGIN RSA PUBLIC KEY-----
+MIIBCgKCAQEAubdF3sdXmBuq557uuVa4eqO+QYIERdzW7LdOUzLmmE1TvEGjBDWX
+oEO9WPRVQIw8vbKIvcwAJXHN8rFc5CrSiCwrNewQ2j0OXydUeykXr0vAUakOfqaZ
+3YW3w5y0IPI0qQITcMXKs8G2xerwUvdeo9y220ZzEFk3B2UlczMUVdhf9tWLgUug
+Ga0mAbAlxnQTUWZXz391HBQSjSTmoUxiGUPwKynZ6THkFljLvTPQIoE9vEzUCNuj
+G2rQXZO6UVRp9SsK1rwR8CIyqrieUKezXaLItdVFnHRX5lhV6+kgUkjUOAuUqB5H
+FN0i+dBu9OXYl7fcuDpb/l1Mq235R7q5LwIDAQAB
+-----END RSA PUBLIC KEY-----
+
+
+[Quantifuel] [10/09/2024-21:05:01:718~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [10/09/2024-21:05:01:812~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel.krjjb5w.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [10/09/2024-21:05:02:379~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [10/09/2024-21:05:02:382~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
+[Quantifuel] [10/09/2024-21:26:24:264~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [10/09/2024-21:26:24:290~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel.krjjb5w.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [10/09/2024-21:26:24:774~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [10/09/2024-21:26:24:775~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
+[Quantifuel] [02/10/2024-22:18:11:537~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [02/10/2024-22:18:11:706~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel.krjjb5w.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [02/10/2024-22:18:12:745~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [02/10/2024-22:18:12:749~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
+[Quantifuel] [03/10/2024-23:20:23:544~GMT+05:30] [log] Initiating...
+
+[Quantifuel] [03/10/2024-23:20:23:651~GMT+05:30] [log] Connecting to MongoDB...
+   Host:       quantifuel.krjjb5w.mongodb.net
+   Port:       27017
+   Database:   Quantifuel
+   Username:   Quantifuel
+
+
+[Quantifuel] [03/10/2024-23:20:24:240~GMT+05:30] [success] 200 - OK > MongoDB connected successfully!
+
+[Quantifuel] [03/10/2024-23:20:24:243~GMT+05:30] [success] Server is up and running, listening at http://0.0.0.0:8080/
+
