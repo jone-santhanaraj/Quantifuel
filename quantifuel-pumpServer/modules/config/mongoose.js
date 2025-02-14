@@ -4,8 +4,6 @@
 
 const mongoose = require('mongoose');
 
-const print = require('../utils/consoleUtils');
-
 const MONGODB_USERNAME = encodeURIComponent(process.env.MONGODB_USERNAME);
 const MONGODB_PASSWORD = encodeURIComponent(process.env.MONGODB_PASSWORD);
 const MONGODB_HOST = process.env.MONGODB_HOST || 'localhost';
@@ -20,7 +18,7 @@ let mongodb;
 const connectMongoose = async (params) => {
   if (typeof params === 'object') {
     try {
-      print.log(
+      console.log(
         `Connecting to MongoDB...\n   Host:       ${MONGODB_HOST}\n   Port:       ${MONGODB_PORT}\n   Database:   ${MONGODB_DATABASE}\n   Username:   ${MONGODB_USERNAME}\n`
       );
       await mongoose.connect(
@@ -36,7 +34,7 @@ const connectMongoose = async (params) => {
       const { connection } = mongoose;
 
       if (connection.readyState === 1) {
-        consoleout.success('200 - OK > MongoDB connected successfully!');
+        console.success('200 - OK > MongoDB connected successfully!');
 
         mongodb = mongoose;
 
@@ -53,7 +51,7 @@ const connectMongoose = async (params) => {
           authSource: MONGODB_AUTHSOURCE,
         };
       }
-      consoleout.failed(
+      console.failed(
         '500 - INTERNAL SERVER ERROR > An error occurred while trying to connect DB:\n',
         'Connection failed!'
       );
@@ -73,7 +71,7 @@ const connectMongoose = async (params) => {
         authSource: MONGODB_AUTHSOURCE,
       };
     } catch (error) {
-      consoleout.failed(
+      console.failed(
         '500 - INTERNAL SERVER ERROR > An error occurred while trying to connect DB:',
         error.codeName ? error.codeName : error
       );
@@ -97,4 +95,4 @@ const connectMongoose = async (params) => {
   return new Error('Expected an object as parameter.');
 };
 
-module.exports = { mongodb, connectMongoose };
+

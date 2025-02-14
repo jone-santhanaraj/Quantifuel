@@ -5,10 +5,10 @@
 // 'flutter create' template.
 
 // The application's name. By default this is also the title of the Flutter window.
-PRODUCT_NAME = Quantifuel
+PRODUCT_NAME = quantifuel
 
 // The application's bundle identifier
 PRODUCT_BUNDLE_IDENTIFIER = me.jonesanthanaraj.quantifuel
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2024 Jone Santhanaraj. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2025 me.jonesanthanaraj. All rights reserved.

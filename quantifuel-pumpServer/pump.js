@@ -1,3 +1,7 @@
+//------------------------------
+//  AUTHOR: jone_santhanaraj
+//------------------------------
+
 const express = require('express');
 const cron = require('node-cron');
 const http = require('http');
@@ -7,16 +11,109 @@ const dotenv = require('dotenv');
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
-const { Gpio } = require('pigpio');  // Use pigpio instead of onoff
+const { Gpio } = require('pigpio'); // Use pigpio instead of onoff
+const mongoose = require('mongoose');
 
-const pump = express();
 dotenv.config();
 
-const print = require('./modules/utils/consoleUtils');
+const MONGODB_USERNAME = encodeURIComponent(process.env.MONGODB_USERNAME);
+const MONGODB_PASSWORD = encodeURIComponent(process.env.MONGODB_PASSWORD);
+const MONGODB_HOST = process.env.MONGODB_HOST || 'localhost';
+const MONGODB_PORT = process.env.MONGODB_PORT || '27017';
+const MONGODB_DATABASE = process.env.MONGODB_DATABASE || 'Quantifuel';
+const MONGODB_AUTHMECHANISM =
+  process.env.MONGODB_AUTHMECHANISM || 'SCRAM-SHA-256';
+const MONGODB_AUTHSOURCE = process.env.MONGODB_AUTHSOURCE || 'Quantifuel';
+
+let mongodb;
+
+const connectMongoose = async (params) => {
+  if (typeof params === 'object') {
+    try {
+      console.log(
+        `Connecting to MongoDB...\n   Host:       ${MONGODB_HOST}\n   Port:       ${MONGODB_PORT}\n   Database:   ${MONGODB_DATABASE}\n   Username:   ${MONGODB_USERNAME}\n`
+      );
+      await mongoose.connect(
+        // `mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_DATABASE}?authMechanism=${MONGODB_AUTHMECHANISM}&authSource=${MONGODB_AUTHSOURCE}`,
+        `mongodb+srv://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@${MONGODB_HOST}/${MONGODB_DATABASE}?retryWrites=true&w=majority&appName=quantifuel`,
+        params
+      );
+      // await mongoose.connect(
+      //   `mongodb://${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_DATABASE}?authMechanism=${MONGODB_AUTHMECHANISM}&authSource=${MONGODB_AUTHSOURCE}`,
+      //   params
+      // );
+
+      const { connection } = mongoose;
+
+      if (connection.readyState === 1) {
+        console.log('200 - OK > MongoDB connected successfully!');
+
+        mongodb = mongoose;
+
+        return {
+          status: 200,
+          isSuccess: true,
+          connection,
+          host: MONGODB_HOST,
+          port: MONGODB_PORT,
+          database: MONGODB_DATABASE,
+          username: MONGODB_USERNAME,
+          password: MONGODB_PASSWORD,
+          authMechanism: MONGODB_AUTHMECHANISM,
+          authSource: MONGODB_AUTHSOURCE,
+        };
+      }
+      console.log(
+        '500 - INTERNAL SERVER ERROR > An error occurred while trying to connect DB:\n',
+        'Connection failed!'
+      );
+
+      mongodb = undefined;
+
+      return {
+        status: 500,
+        isSuccess: false,
+        error,
+        host: MONGODB_HOST,
+        port: MONGODB_PORT,
+        database: MONGODB_DATABASE,
+        username: MONGODB_USERNAME,
+        password: MONGODB_PASSWORD,
+        authMechanism: MONGODB_AUTHMECHANISM,
+        authSource: MONGODB_AUTHSOURCE,
+      };
+    } catch (error) {
+      console.log(
+        '500 - INTERNAL SERVER ERROR > An error occurred while trying to connect DB:',
+        error.codeName ? error.codeName : error
+      );
+
+      mongodb = undefined;
+
+      return {
+        status: 500,
+        isSuccess: false,
+        error,
+        host: MONGODB_HOST,
+        port: MONGODB_PORT,
+        database: MONGODB_DATABASE,
+        username: MONGODB_USERNAME,
+        password: MONGODB_PASSWORD,
+        authMechanism: MONGODB_AUTHMECHANISM,
+        authSource: MONGODB_AUTHSOURCE,
+      };
+    }
+  }
+  return new Error('Expected an object as parameter.');
+};
+
+const pump = express();
+
 const server = http.createServer(pump);
 const pumpIO = socketIo(server);
 
-const { mongodb, connectMongoose } = require('./modules/config/mongoose');
+// const { mongodb, connectMongoose } = require('./modules/config/mongoose');
+// const { console } = require('inspector');
 
 const PROTOCOL = process.env.PROTOCOL || 'http';
 const HOST = process.env.HOST || 'localhost';
@@ -33,9 +130,9 @@ const fuelPrices = {};
 pump.use(express.json());
 
 pumpIO.on('connection', (socket) => {
-  print.log('A user connected');
+  console.log('A user connected');
   socket.on('disconnect', () => {
-    print.log('A user disconnected');
+    console.log('A user disconnected');
   });
 });
 
@@ -43,18 +140,18 @@ pumpIO.on('connection', (socket) => {
 const gpio4 = new Gpio(4, { mode: Gpio.OUTPUT });
 
 const startServer = async () => {
-  consoleout.log('Initiating...');
+  console.log('Initiating...');
   const mongodbConnectionResponse = await connectMongoose({});
   if (mongodbConnectionResponse.status === 200) {
-    consoleout.success(
+    console.log(
       'Pump is up and running, listening at',
       `${PROTOCOL}://${HOST}:${PORT}/`
     );
     MongodbState = 1;
 
-    gpio4.digitalWrite(1);  // Turn on GPIO 4 using pigpio
+    gpio4.digitalWrite(1); // Turn on GPIO 4 using pigpio
   } else if (mongodbConnectionResponse.status === 500) {
-    consoleout.failed(
+    console.log(
       `Pump is running at: ${PROTOCOL}://${HOST}:${PORT}/ but not ready to accept requests`
     );
     MongodbState = 0;
@@ -72,13 +169,13 @@ const clearLogFile = () => {
 
     fs.readFile(logFilePath, 'utf8', (err) => {
       if (err) {
-        consoleout.error('Error reading the log file:', err);
+        console.log('log reading the log file:', err);
       } else {
         fs.truncate(logFilePath, 0, (truncateErr) => {
           if (truncateErr) {
-            consoleout.error('Error clearing the log file:', truncateErr);
+            console.log('Error clearing the log file:', truncateErr);
           } else {
-            consoleout.info(
+            console.log(
               `Log file "${logFileName}" has been cleared successfully.`
             );
           }
@@ -86,17 +183,17 @@ const clearLogFile = () => {
       }
     });
   } else {
-    consoleout.warn('Log file name is not set.');
+    console.log('Log file name is not set.');
   }
 };
 
 const shutdownServer = async () => {
   await setTimeout(async () => {
     MongodbState = 0;
-    gpio4.digitalWrite(0);  // Turn off GPIO 4 using pigpio
-    gpio4.mode(Gpio.INPUT);  // Reset GPIO pin to input mode
+    gpio4.digitalWrite(0); // Turn off GPIO 4 using pigpio
+    gpio4.mode(Gpio.INPUT); // Reset GPIO pin to input mode
     await server.close(() => {
-      consoleout.log(
+      console.log(
         `Pump listening at ${PROTOCOL}://${HOST}:${PORT}/ has been stopped on command.`
       );
     });
@@ -109,13 +206,13 @@ const shutdownServer = async () => {
 const restartServer = async () => {
   await setTimeout(async () => {
     await server.close(() => {
-      consoleout.log(
+      console.log(
         `Pump listened at ${PROTOCOL}://${HOST}:${PORT}/ has been stopped for a restart.`
       );
     });
   }, 1000);
   setTimeout(() => {
-    consoleout.log('Attempting to start the server again after restart...');
+    console.log('Attempting to start the server again after restart...');
   }, 1500);
   setTimeout(async () => {
     await server.listen(PORT, HOST, startServer);
@@ -126,15 +223,15 @@ const processConsoleCommand = (command) => {
   if (command === 'clearlog') {
     clearLogFile();
   } else if (command === 'stop') {
-    consoleout.log('Stopping server...');
+    console.log('Stopping server...');
     shutdownServer();
   } else if (command === 'restart') {
-    consoleout.log('Restarting server...');
+    console.log('Restarting server...');
     restartServer();
   } else if (command === '') {
-    consoleout.info('-');
+    console.log('-');
   } else {
-    consoleout.warn(`Unable to recognize the command: "${command}"`);
+    console.log(`Unable to recognize the command: "${command}"`);
   }
 };
 
